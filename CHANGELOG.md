@@ -1,5 +1,26 @@
 # Changelog
 
+## 26.2.1
+
+### Bug Fixes 🐛
+
+#### Release
+
+- Restore version bumping for releases by @BYK in [#4191](https://github.com/getsentry/self-hosted/pull/4191)
+- Be explicit about pre release and post release command by @hubertdeng123 in [#4190](https://github.com/getsentry/self-hosted/pull/4190)
+
+#### Other
+
+- Prevent script injection vulnerability in get-compose-action by @fix-it-felix-sentry in [#4179](https://github.com/getsentry/self-hosted/pull/4179)
+
+### Internal Changes 🔧
+
+- (deps) Bump getsentry/craft from 2.21.4 to 2.21.7 by @dependabot in [#4188](https://github.com/getsentry/self-hosted/pull/4188)
+
+### Other
+
+- Use docker-compose shipped in GHA runners by @aminvakil in [#4184](https://github.com/getsentry/self-hosted/pull/4184)
+
 ## 26.1.0
 
 ### New Features ✨
