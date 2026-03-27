@@ -1,12 +1,12 @@
 FROM python:3.11.6-slim-bullseye
 
-LABEL maintainer="oss@sentry.io"
-LABEL org.opencontainers.image.title="Sentry"
-LABEL org.opencontainers.image.description="Sentry runtime image"
-LABEL org.opencontainers.image.url="https://sentry.io/"
-LABEL org.opencontainers.image.documentation="https://develop.sentry.dev/self-hosted/"
-LABEL org.opencontainers.image.vendor="Functional Software, Inc."
-LABEL org.opencontainers.image.authors="oss@sentry.io"
+LABEL maintainer="ops@hanzo.ai"
+LABEL org.opencontainers.image.title="Hanzo Sentry"
+LABEL org.opencontainers.image.description="Hanzo Sentry — error tracking and performance monitoring"
+LABEL org.opencontainers.image.url="https://sentry.hanzo.ai/"
+LABEL org.opencontainers.image.documentation="https://docs.hanzo.ai/sentry/"
+LABEL org.opencontainers.image.vendor="Hanzo AI, Inc."
+LABEL org.opencontainers.image.authors="ops@hanzo.ai"
 
 # add our user and group first to make sure their IDs get assigned consistently
 RUN groupadd -r sentry && useradd -r -m -g sentry sentry
@@ -93,5 +93,5 @@ CMD ["run", "web"]
 ARG SOURCE_COMMIT
 ENV SENTRY_BUILD=${SOURCE_COMMIT:-unknown}
 LABEL org.opencontainers.image.revision=$SOURCE_COMMIT
-LABEL org.opencontainers.image.source="https://github.com/getsentry/sentry/tree/${SOURCE_COMMIT:-master}/"
-LABEL org.opencontainers.image.licenses="https://github.com/getsentry/sentry/blob/${SOURCE_COMMIT:-master}/LICENSE"
+LABEL org.opencontainers.image.source="https://github.com/hanzoai/sentry/tree/${SOURCE_COMMIT:-main}/"
+LABEL org.opencontainers.image.licenses="Apache-2.0"
