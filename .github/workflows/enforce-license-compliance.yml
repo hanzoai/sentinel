@@ -12,7 +12,7 @@ permissions:
 jobs:
   enforce-license-compliance:
     if: github.repository_owner == 'getsentry'
-    runs-on: ubuntu-latest
+    runs-on: hanzo-build-linux-amd64
     steps:
       - name: 'Enforce License Compliance'
         uses: getsentry/action-enforce-license-compliance@main
