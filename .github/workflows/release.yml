@@ -18,7 +18,7 @@ permissions:
 jobs:
   release:
     if: github.repository_owner == 'getsentry'
-    runs-on: ubuntu-latest
+    runs-on: hanzo-build-linux-amd64
     name: "Release a new version"
     steps:
       - name: Get auth token
@@ -43,7 +43,7 @@ jobs:
       release-version: ${{ env.RELEASE_VERSION }}
   dogfood-release:
     if: github.repository_owner == 'getsentry'
-    runs-on: ubuntu-latest
+    runs-on: hanzo-build-linux-amd64
     name: Create release on self-hosted dogfood instance
     needs: release
     steps:

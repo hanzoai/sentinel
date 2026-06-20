@@ -6,7 +6,7 @@ on:
 jobs:
   lock:
     if: github.repository_owner == 'getsentry'
-    runs-on: ubuntu-latest
+    runs-on: hanzo-build-linux-amd64
     steps:
       - uses: getsentry/forked-action-lock-threads@master
         with:
