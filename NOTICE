@@ -1,0 +1,16 @@
+Hanzo Sentry
+Copyright (c) 2026 Hanzo AI, Inc.
+
+This distribution is a fork of Sentry Self-Hosted.
+
+  Project:   Sentry Self-Hosted
+  Source:    https://github.com/getsentry/self-hosted
+  License:   FSL-1.1-Apache-2.0 (Functional Source License, Version 1.1,
+             Apache 2.0 Future License)
+  Copyright: Copyright (c) 2016-2024 Functional Software, Inc. dba Sentry
+
+The upstream Software is source-available under the Functional Source License
+1.1. It permits use, modification, and redistribution for any Permitted
+Purpose and restricts Competing Use; each released version converts to the
+Apache License 2.0 two years after its publication. The upstream license text
+is preserved verbatim in LICENSE.md and is not relicensed by this fork.
