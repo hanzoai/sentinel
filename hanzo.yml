@@ -1,0 +1,41 @@
+# Canonical CI/CD config for hanzoai/sentry — read by both the hanzoai/ci
+# reusable workflow (.github/workflows/cicd.yml) and platform.hanzo.ai.
+#
+# One image: the Hanzo-enhanced Sentry app tier (web + workers + consumers),
+# built from sentry/Dockerfile FROM the pinned upstream base, with
+# sentry/enhance-image.sh baking in the hanzo.id OIDC provider. The unmodified
+# Rust/analytics components (relay, symbolicator, snuba, taskbroker, vroom,
+# uptime-checker) are pulled upstream (ghcr.io/getsentry/*) and are NOT built
+# here.
+#
+# Supersedes the ad-hoc .github/workflows/deploy.yml (which built amd64 on a
+# GitHub-hosted runner and from a floating base) — build now runs on the arc
+# pool via hanzoai/ci, from a pinned base.
+
+images:
+  - name: sentry
+    context: ./sentry
+    dockerfile: sentry/Dockerfile
+    repo: ghcr.io/hanzoai/sentry
+    # Pin the base — never float `:latest` into a released image.
+    args:
+      SENTRY_IMAGE: getsentry/sentry:26.3.1
+
+# Deploy: roll the freshly-built image onto the `sentry-web` + worker/consumer
+# Deployments in universe/infra/k8s/sentry. Fires only on `main` (+ tags);
+# PRs/forks build but never deploy. KMS hands back the kubeconfig at run time.
+deploy:
+  cluster: do-sfo3-hanzo-k8s
+  namespace: hanzo
+  # Quoted to dodge YAML 1.1 boolean coercion of a bare `on:` key.
+  "on": [main]
+  services:
+    - name: sentry-web
+      image: sentry
+
+# KMS (kms.hanzo.ai, Universal Auth) supplies the GHCR push token and the
+# target kubeconfig at run time. Only KMS_CLIENT_ID/KMS_CLIENT_SECRET live in
+# GitHub; everything else is fetched here.
+kms:
+  path: /deploy
+  environment: prod
