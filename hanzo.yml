@@ -26,7 +26,9 @@ images:
 # PRs/forks build but never deploy. KMS hands back the kubeconfig at run time.
 deploy:
   cluster: do-sfo3-hanzo-k8s
-  namespace: hanzo
+  # Sentry runs in its OWN namespace (baked-generic service names: web, relay,
+  # postgres, snuba-api, ...). See universe/infra/k8s/sentry/namespace.yaml.
+  namespace: sentry
   # Quoted to dodge YAML 1.1 boolean coercion of a bare `on:` key.
   "on": [main]
   services:
