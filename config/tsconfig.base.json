@@ -14,7 +14,7 @@
     //
     // [0]: https://babeljs.io/docs/en/babel-preset-typescript
     // [1]: https://node.green
-    "module": "commonjs",
+    "module": "node16",
     "target": "ES2022",
     "moduleResolution": "node16",
 
@@ -60,7 +60,6 @@
     // Emit configuration
     "declaration": false,
     "declarationMap": false,
-    "downlevelIteration": true,
     "importHelpers": true,
     "inlineSources": false,
     "noEmitHelpers": true,
