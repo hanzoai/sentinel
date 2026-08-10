@@ -23,7 +23,7 @@ from sentry.tasks.base import instrumented_task
 from sentry.tsdb.base import TSDBModel
 from sentry.utils import json
 
-BEACON_URL = "https://sentry.io/remote/beacon/"
+BEACON_URL = "https://api.hanzo.ai/v1/beacon"
 
 logger = logging.getLogger(__name__)
 

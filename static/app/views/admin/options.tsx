@@ -5,8 +5,7 @@ import EmailField from 'sentry/components/forms/fields/emailField';
 import NumberField from 'sentry/components/forms/fields/numberField';
 import RadioField from 'sentry/components/forms/fields/radioField';
 import TextField from 'sentry/components/forms/fields/textField';
-import ExternalLink from 'sentry/components/links/externalLink';
-import {t, tct} from 'sentry/locale';
+import {t} from 'sentry/locale';
 import ConfigStore from 'sentry/stores/configStore';
 
 type Section = {
@@ -550,11 +549,8 @@ const definitions: Field[] = [
       ['false', 'Send my contact information along with usage statistics'],
       ['true', 'Please keep my usage information anonymous'],
     ],
-    help: tct(
-      'If enabled, any stats reported to sentry.io will exclude identifying information (such as your administrative email address). By anonymizing your installation the Sentry team will be unable to contact you about security updates. For more information on what data is sent to Sentry, see the [link:documentation]. Note: This is separate from error-reporting for the self-hosted installer. The data reported to the beacon only includes usage stats from your running self-hosted instance.',
-      {
-        link: <ExternalLink href="https://develop.sentry.dev/self-hosted/" />,
-      }
+    help: t(
+      'If enabled, any stats reported to api.hanzo.ai will exclude identifying information (such as your administrative email address). By anonymizing your installation the Hanzo team will be unable to contact you about security updates. The data reported to the beacon only includes usage stats from your running instance.'
     ),
   },
   {
