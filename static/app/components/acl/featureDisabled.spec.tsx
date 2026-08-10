@@ -9,7 +9,7 @@ describe('FeatureDisabled', function () {
     );
 
     expect(
-      screen.getByText('This feature is not enabled on your Sentry installation.')
+      screen.getByText('This feature is not enabled on your Sentinel installation.')
     ).toBeInTheDocument();
     expect(screen.getByText('Help')).toBeInTheDocument();
   });
@@ -23,7 +23,7 @@ describe('FeatureDisabled', function () {
     );
 
     expect(
-      screen.getByText('This feature is not enabled on your Sentry installation.')
+      screen.getByText('This feature is not enabled on your Sentinel installation.')
     ).toBeInTheDocument();
     expect(screen.getByText('Help')).toBeInTheDocument();
   });
@@ -62,7 +62,7 @@ describe('FeatureDisabled', function () {
       />
     );
     fireEvent.click(
-      screen.getByText('This feature is not enabled on your Sentry installation.')
+      screen.getByText('This feature is not enabled on your Sentinel installation.')
     );
     expect(
       screen.getByText(/Enable this feature on your sentry installation/)

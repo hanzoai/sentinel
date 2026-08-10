@@ -247,7 +247,7 @@ class ProjectReleaseTracking extends DeprecatedAsyncView<Props, State> {
           <PanelBody withPadding>
             <p>
               {t(
-                'You can notify Sentry when you release new versions of your application via our HTTP API.'
+                'You can notify Sentinel when you release new versions of your application via our HTTP API.'
               )}
             </p>
 

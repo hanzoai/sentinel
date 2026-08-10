@@ -82,7 +82,7 @@ function ProjectHpkpReports() {
               `[link:HTTP Public Key Pinning]
               (HPKP) is a security feature that tells a web client to associate a specific
               cryptographic public key with a certain web server to decrease the risk of MITM
-              attacks with forged certificates. It's enforced by browser vendors, and Sentry
+              attacks with forged certificates. It's enforced by browser vendors, and Sentinel
               supports capturing violations using the standard reporting hooks.`,
               {
                 link: (
@@ -95,8 +95,8 @@ function ProjectHpkpReports() {
           <p>
             {t(
               `To configure HPKP reports
-              in Sentry, you'll need to send a header from your server describing your
-              policy, as well specifying the authenticated Sentry endpoint.`
+              in Sentinel, you'll need to send a header from your server describing your
+              policy, as well specifying the authenticated Sentinel endpoint.`
             )}
           </p>
 

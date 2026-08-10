@@ -40,7 +40,7 @@ describe('FeatureTourModal', function () {
     });
 
     expect(
-      screen.getByText('This feature is not enabled on your Sentry installation.')
+      screen.getByText('This feature is not enabled on your Sentinel installation.')
     ).toBeInTheDocument();
 
     expect(screen.getByText(/# Enables the Custom Feature feature/)).toBeInTheDocument();

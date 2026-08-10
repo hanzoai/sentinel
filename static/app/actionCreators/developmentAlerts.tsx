@@ -41,7 +41,7 @@ export function displayExperimentalSpaAlert() {
   AlertStore.addAlert({
     id: 'develop-proxy',
     message: t(
-      'You are developing against production Sentry API, please BE CAREFUL, as your changes will affect production data.'
+      'You are developing against production Sentinel API, please BE CAREFUL, as your changes will affect production data.'
     ),
     type: 'warning',
     opaque: true,

@@ -137,7 +137,7 @@ class ProjectContext extends Component<Props, State> {
   }
 
   getTitle() {
-    return this.state.project?.slug ?? 'Sentry';
+    return this.state.project?.slug ?? 'Sentinel';
   }
 
   onProjectChange(projectIds: Set<string>) {

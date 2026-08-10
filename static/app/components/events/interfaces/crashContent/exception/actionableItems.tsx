@@ -455,8 +455,8 @@ export function ActionableItems({event, project, isShare}: ActionableItemsProps)
       }
     >
       {hasErrorAlert
-        ? t('Sentry has identified the following problems for you to fix')
-        : t('Sentry has identified the following problems for you to monitor')}
+        ? t('Sentinel has identified the following problems for you to fix')
+        : t('Sentinel has identified the following problems for you to monitor')}
     </StyledAlert>
   );
 }

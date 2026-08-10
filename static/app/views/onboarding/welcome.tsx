@@ -89,7 +89,7 @@ function TargetedOnboardingWelcome(props: StepProps) {
         <Wrapper>
           <WelcomeBackground />
           <motion.h1 {...fadeAway} style={{marginBottom: space(0.5)}}>
-            {t('Welcome to Sentry')}
+            {t('Welcome to Sentinel')}
           </motion.h1>
           <SubHeaderText style={{marginBottom: space(4)}} {...fadeAway}>
             {t(
@@ -98,7 +98,7 @@ function TargetedOnboardingWelcome(props: StepProps) {
           </SubHeaderText>
           <ActionItem {...fadeAway}>
             <InnerAction
-              title={t('Install Sentry')}
+              title={t('Install Sentinel')}
               subText={t(
                 'Select your languages or frameworks and install the SDKs to start tracking issues'
               )}
@@ -136,7 +136,7 @@ function TargetedOnboardingWelcome(props: StepProps) {
             />
           </ActionItem>
           <motion.p style={{margin: 0}} {...fadeAway}>
-            {t("Gee, I've used Sentry before.")}
+            {t("Gee, I've used Sentinel before.")}
             <br />
             <Link
               onClick={handleSkipOnboarding}

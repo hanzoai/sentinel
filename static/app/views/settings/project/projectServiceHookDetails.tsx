@@ -166,7 +166,7 @@ export default class ProjectServiceHookDetails extends DeprecatedAsyncView<Props
           <PanelHeader>{t('Event Validation')}</PanelHeader>
           <PanelBody>
             <PanelAlert type="info" showIcon>
-              Sentry will send the <code>X-ServiceHook-Signature</code> header built using{' '}
+              Sentinel will send the <code>X-ServiceHook-Signature</code> header built using{' '}
               <code>HMAC(SHA256, [secret], [payload])</code>. You should always verify
               this signature before trusting the information provided in the webhook.
             </PanelAlert>

@@ -163,7 +163,7 @@ export function OrganizationAuthTokensIndex({
 
           <TextBlock>
             {t(
-              'Organization Auth Tokens can be used in many places to interact with Sentry programatically. For example, they can be used for sentry-cli, bundler plugins or similar uses cases.'
+              'Organization Auth Tokens can be used in many places to interact with Sentinel programatically. For example, they can be used for sentry-cli, bundler plugins or similar uses cases.'
             )}
           </TextBlock>
           <TextBlock>

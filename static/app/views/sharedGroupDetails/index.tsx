@@ -102,7 +102,7 @@ class SharedGroupDetails extends Component<Props, State> {
   getTitle() {
     const {group} = this.state;
 
-    return group?.title ?? 'Sentry';
+    return group?.title ?? 'Sentinel';
   }
 
   render() {

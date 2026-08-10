@@ -169,7 +169,7 @@ class ProjectDataForwarding extends DeprecatedAsyncComponent<Props, State> {
 
               <Alert showIcon>
                 {tct(
-                  `Sentry forwards [em:all applicable error events] to the provider, in
+                  `Sentinel forwards [em:all applicable error events] to the provider, in
                 some cases this may be a significant volume of data.`,
                   {
                     em: <strong />,

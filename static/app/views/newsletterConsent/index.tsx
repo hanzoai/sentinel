@@ -45,7 +45,7 @@ function NewsletterConsent({onSubmitSuccess}: Props) {
                focus on relevant information, and we'll never sell your data to third
                parties. See our [link:Privacy Policy] for more details.
                `,
-            {link: <ExternalLink href="https://sentry.io/privacy/" />}
+            {link: <ExternalLink href="https://hanzo.ai/privacy" />}
           )}
         />
       </ApiForm>

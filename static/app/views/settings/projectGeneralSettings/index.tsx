@@ -150,7 +150,7 @@ class ProjectGeneralSettings extends DeprecatedAsyncView<Props, State> {
 
         {isInternal &&
           t(
-            'This project cannot be removed. It is used internally by the Sentry server.'
+            'This project cannot be removed. It is used internally by the Sentinel server.'
           )}
 
         {isProjectAdmin && !isInternal && (
@@ -203,7 +203,7 @@ class ProjectGeneralSettings extends DeprecatedAsyncView<Props, State> {
 
         {isInternal &&
           t(
-            'This project cannot be transferred. It is used internally by the Sentry server.'
+            'This project cannot be transferred. It is used internally by the Sentinel server.'
           )}
 
         {isOrgOwner && !isInternal && (
@@ -345,7 +345,7 @@ class ProjectGeneralSettings extends DeprecatedAsyncView<Props, State> {
               <PanelAlert type="info">
                 <TextBlock noMargin>
                   {tct(
-                    'Configure origin URLs which Sentry should accept events from. This is used for communication with clients like [link].',
+                    'Configure origin URLs which Sentinel should accept events from. This is used for communication with clients like [link].',
                     {
                       link: (
                         <ExternalLink href="https://github.com/getsentry/sentry-javascript">

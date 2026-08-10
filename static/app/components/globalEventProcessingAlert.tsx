@@ -5,7 +5,7 @@ import ExternalLink from 'sentry/components/links/externalLink';
 import {tct} from 'sentry/locale';
 import type {Project} from 'sentry/types';
 
-const sentryStatusPageLink = 'https://status.sentry.io/';
+const sentryStatusPageLink = 'https://status.hanzo.ai';
 
 type Props = {
   projects: Project[];

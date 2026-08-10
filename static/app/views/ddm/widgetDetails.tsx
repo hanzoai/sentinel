@@ -92,7 +92,7 @@ export function MetricDetails({widget, onRowHover, focusArea}: MetricDetailsProp
           >
             <Tooltip
               title={t(
-                'This metric is automatically collected by Sentry. It is not bound to a specific line of your code.'
+                'This metric is automatically collected by Sentinel. It is not bound to a specific line of your code.'
               )}
               disabled={!isCodeLocationsDisabled}
             >

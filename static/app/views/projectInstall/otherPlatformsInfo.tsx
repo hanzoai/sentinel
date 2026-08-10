@@ -41,7 +41,7 @@ export function OtherPlatformsInfo({
   return (
     <Wrapper>
       {t(
-        "We cannot provide instructions for '%s' projects. However, please find below the DSN key for this project, which is required to instrument Sentry.",
+        "We cannot provide instructions for '%s' projects. However, please find below the DSN key for this project, which is required to instrument Sentinel.",
         platform
       )}
       <CodeSnippet dark language="properties">

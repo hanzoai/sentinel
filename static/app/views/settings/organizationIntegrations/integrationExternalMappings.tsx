@@ -194,7 +194,7 @@ class IntegrationExternalMappings extends DeprecatedAsyncComponent<Props, State>
           headers={[
             tct('External [type]', {type}),
             <IconArrow key="arrow" direction="right" size="sm" />,
-            tct('Sentry [type]', {type}),
+            tct('Sentinel [type]', {type}),
             <AddButton
               key="delete-button"
               data-test-id="add-mapping-button"

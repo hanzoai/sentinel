@@ -20,7 +20,7 @@ function SampleEventAlert({
       <IconLightning />
       <TextWrapper>
         {t(
-          'You are viewing a sample error. Configure Sentry to start viewing real errors.'
+          'You are viewing a sample error. Configure Sentinel to start viewing real errors.'
         )}
       </TextWrapper>
       <Button
