@@ -1,7 +1,6 @@
 import {css} from '@emotion/react';
 import styled from '@emotion/styled';
 
-import sentryPattern from 'sentry-images/pattern/sentry-pattern.png';
 
 import {Alert} from 'sentry/components/alert';
 import ApiForm from 'sentry/components/forms/apiForm';
@@ -175,13 +174,6 @@ const Pattern = styled('div')`
     background-repeat: repeat-y;
   }
 
-  &::after {
-    ${fixedStyle}
-    content: '';
-    background: url(${sentryPattern});
-    background-size: 400px;
-    opacity: 0.8;
-  }
 `;
 
 const Heading = styled('h1')`
