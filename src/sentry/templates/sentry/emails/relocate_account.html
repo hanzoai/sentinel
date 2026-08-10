@@ -3,8 +3,8 @@
 {% load i18n %}
 
 {% block main %}
-    <h3>You've Been Added to a Relocated Sentry Account</h3>
-    <p>The following Sentry organizations that you are a member of have been migrated onto sentry.io:</p>
+    <h3>You've Been Added to a Relocated Sentinel Account</h3>
+    <p>The following organizations that you are a member of have been migrated onto Sentinel:</p>
 <ul>
 {% for org in orgs %}
 <li>
@@ -12,7 +12,7 @@
 </li>
 {% endfor %}
 </ul>
-    <p>To continue with using these accounts at their new location, please claim your account with sentry.io.</p>
+    <p>To continue with using these accounts at their new location, please claim your account with Sentinel.</p>
 
     <p><a href="{{ url|safe }}" class="btn">Claim Account</a></p>
 {% endblock %}
