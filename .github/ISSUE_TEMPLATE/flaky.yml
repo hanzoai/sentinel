@@ -36,7 +36,7 @@ body:
     id: test-run-link
     attributes:
       label: Link to Test Run
-      placeholder: https://github.com/getsentry/sentry/runs/5582673807
+      placeholder: https://github.com/hanzoai/sentry/runs/5582673807
       description: paste the URL to a test run showing the issue
     validations:
       required: true

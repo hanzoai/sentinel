@@ -31,7 +31,7 @@
             <span class="icon-arrow-left"></span>
             <span class="avatar">{% avatar existing_user %}</span>
           </div>
-          <div><strong>Sentry</strong></div>
+          <div><strong>Sentinel</strong></div>
           <div class="email-truncate">{{ existing_user.email }}</div>
         </div>
       </div>
@@ -39,13 +39,13 @@
 
     <div class="align-center">
       {% if force_link or existing_user.email == identity.email %}
-        <p>We're going to associate this {{ provider }} account with your Sentry account, which means all of your existing settings will stay intact.</p>
+        <p>We're going to associate this {{ provider }} account with your Sentinel account, which means all of your existing settings will stay intact.</p>
 
         <p>
           <button class="btn btn-primary" name="op" value="confirm" type="submit">Continue</button>
         </p>
       {% else %}
-        <p>Would you like to associate this {{ provider }} account with your Sentry account? If not, we'll go ahead and create a new account for you.</p>
+        <p>Would you like to associate this {{ provider }} account with your Sentinel account? If not, we'll go ahead and create a new account for you.</p>
 
         <div class="sso-grid">
           <div class="column">

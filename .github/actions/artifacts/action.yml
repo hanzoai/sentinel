@@ -1,4 +1,4 @@
-name: 'Sentry Artifacts'
+name: 'Sentinel Artifacts'
 description: 'Handles uploading coverage/test artifacts to codecov'
 
 inputs:

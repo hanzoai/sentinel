@@ -78,16 +78,16 @@
       </div>
       <h3>FINISH INSTALLATION</h3>
       <h1>Alright, here we go.</h1>
-      <p>To complete the Jira-Sentry Integration, we'll need to configure some settings in the Sentry app.</p>
+      <p>To complete the Jira-Sentinel Integration, we'll need to configure some settings in the Sentinel app.</p>
       {% if error_message %}
         {{ error_message }}
       {% elif refresh_required %}
         <div class="aui-message aui-message-info">
-          <p>This page has expired, please refresh to configure your Sentry integration</p>
+          <p>This page has expired, please refresh to configure your Sentinel integration</p>
         </div>
       {% else %}
         <a target="_blank" href="{{ finish_link }}" class="button">
-          Finish Installation in Sentry
+          Finish Installation in Sentinel
         </a>
       {% endif %}
   </div>
