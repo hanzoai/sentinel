@@ -40,7 +40,7 @@ export function AddIntegrationButton({
   return (
     <Tooltip
       disabled={provider.canAdd}
-      title={`Integration cannot be added on Sentry. Enable this integration via the ${provider.name} instance.`}
+      title={`Integration cannot be added on Sentinel. Enable this integration via the ${provider.name} instance.`}
     >
       <AddIntegration
         provider={provider}

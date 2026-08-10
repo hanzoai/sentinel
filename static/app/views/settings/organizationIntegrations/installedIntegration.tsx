@@ -88,7 +88,7 @@ export default class InstalledIntegration extends Component<Props> {
     const message = (
       <Fragment>
         <Alert type="error" showIcon>
-          {t('This integration cannot be removed in Sentry')}
+          {t('This integration cannot be removed in Sentinel')}
         </Alert>
         {body}
       </Fragment>

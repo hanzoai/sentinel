@@ -143,7 +143,7 @@ class Settings extends DefaultSettings<Props, State> {
       return (
         <div className="alert alert-error m-b-1">
           An unknown error occurred. Need help with this?{' '}
-          <a href="https://sentry.io/support/">Contact support</a>
+          <a href="https://hanzo.ai/support">Contact support</a>
         </div>
       );
     }

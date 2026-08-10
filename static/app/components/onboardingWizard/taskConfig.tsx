@@ -210,7 +210,7 @@ export function getOnboardingTasks({
       task: OnboardingTaskKey.FIRST_INTEGRATION,
       title: t('Install any of our 40+ integrations'),
       description: t(
-        'Get alerted in Slack. Two-way sync issues between Sentry and Jira. Notify Sentry of releases from GitHub, Vercel, or Netlify.'
+        'Get alerted in Slack. Two-way sync issues between Sentinel and Jira. Notify Sentinel of releases from GitHub, Vercel, or Netlify.'
       ),
       skippable: true,
       requisites: [OnboardingTaskKey.FIRST_PROJECT, OnboardingTaskKey.FIRST_EVENT],
@@ -373,7 +373,7 @@ export function getOnboardingTasks({
     {
       task: OnboardingTaskKey.ISSUE_TRACKER,
       title: t('Set up issue tracking'),
-      description: t('Link to Sentry issues within your issue tracker'),
+      description: t('Link to Sentinel issues within your issue tracker'),
       skippable: true,
       requisites: [OnboardingTaskKey.FIRST_PROJECT, OnboardingTaskKey.FIRST_EVENT],
       actionType: 'app',

@@ -17,7 +17,7 @@ type Props = ModalRenderProps;
 
 function DemoSignUpModal({closeModal}: Props) {
   const signupUrl = urlAttachQueryParams(
-    'https://sentry.io/signup/',
+    'https://hanzo.ai/signup',
     extraQueryParameter()
   );
   const demoUrl = urlAttachQueryParams(

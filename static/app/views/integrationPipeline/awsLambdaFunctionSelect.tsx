@@ -110,7 +110,7 @@ export default class AwsLambdaFunctionSelect extends Component<Props, State> {
     return (
       <LoadingWrapper>
         <StyledLoadingIndicator />
-        <h4>{t('Adding Sentry to %s functions', count)}</h4>
+        <h4>{t('Adding Sentinel to %s functions', count)}</h4>
         {text}
       </LoadingWrapper>
     );
@@ -156,7 +156,7 @@ export default class AwsLambdaFunctionSelect extends Component<Props, State> {
       <List symbol="colored-numeric" initialCounterValue={initialStepNumber}>
         <ListItem>
           <Header>{this.renderWhatWeFound()}</Header>
-          {t('Decide which functions you would like to enable for Sentry monitoring')}
+          {t('Decide which functions you would like to enable for Sentinel monitoring')}
           <StyledForm
             initialData={this.initialData}
             model={this.model}

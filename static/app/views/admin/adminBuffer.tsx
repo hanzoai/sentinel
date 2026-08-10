@@ -14,7 +14,7 @@ function AdminBuffer() {
 
         <div className="box-content with-padding">
           <p>
-            Sentry buffers are responsible for making changes to cardinality counters —
+            Sentinel buffers are responsible for making changes to cardinality counters —
             such as an issues event count — as well as updating attributes like{' '}
             <em>last seen</em>. These are flushed on a regularly interval, and are
             directly affected by the queue backlog.

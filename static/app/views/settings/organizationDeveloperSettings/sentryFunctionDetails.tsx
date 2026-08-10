@@ -72,23 +72,23 @@ const formFields: Field[] = [
     name: 'name',
     type: 'string',
     required: true,
-    placeholder: 'e.g. My Sentry Function',
+    placeholder: 'e.g. My Sentinel Function',
     label: 'Name',
-    help: 'Human readable name of your Sentry Function',
+    help: 'Human readable name of your Sentinel Function',
   },
   {
     name: 'author',
     type: 'string',
     placeholder: 'e.g. Acme Software',
     label: 'Author',
-    help: 'The company or person who built and maintains this Sentry Function.',
+    help: 'The company or person who built and maintains this Sentinel Function.',
   },
   {
     name: 'overview',
     type: 'string',
-    placeholder: 'e.g. This Sentry Function does something useful',
+    placeholder: 'e.g. This Sentinel Function does something useful',
     label: 'Overview',
-    help: 'A short description of your Sentry Function.',
+    help: 'A short description of your Sentinel Function.',
   },
 ];
 
@@ -134,7 +134,7 @@ function SentryFunctionDetails(props: Props) {
   };
 
   const handleSubmitSuccess = data => {
-    addSuccessMessage(t('Sentry Function successfully saved.', data.name));
+    addSuccessMessage(t('Sentinel Function successfully saved.', data.name));
     const baseUrl = `/settings/${organization.slug}/developer-settings/sentry-functions/`;
     const url = `${baseUrl}${data.slug}/`;
     if (sentryFunction) {
@@ -153,7 +153,7 @@ function SentryFunctionDetails(props: Props) {
     <div>
       <Feature features="organizations:sentry-functions">
         <h2>
-          {sentryFunction ? t('Editing Sentry Function') : t('Create Sentry Function')}
+          {sentryFunction ? t('Editing Sentinel Function') : t('Create Sentinel Function')}
         </h2>
         <Form
           apiMethod={method}
@@ -171,7 +171,7 @@ function SentryFunctionDetails(props: Props) {
           onSubmitError={handleSubmitError}
           onSubmitSuccess={handleSubmitSuccess}
         >
-          <JsonForm forms={[{title: t('Sentry Function Details'), fields: formFields}]} />
+          <JsonForm forms={[{title: t('Sentinel Function Details'), fields: formFields}]} />
           <Panel>
             <PanelHeader>{t('Webhooks')}</PanelHeader>
             <PanelBody>

@@ -342,7 +342,7 @@ function CustomFilters({project, disabled}: {disabled: boolean; project: Project
                 features={p.features}
                 alert={PanelAlert}
                 message={t(
-                  'Release and Error Message filtering are not enabled on your Sentry installation'
+                  'Release and Error Message filtering are not enabled on your Sentinel installation'
                 )}
               />
             ),

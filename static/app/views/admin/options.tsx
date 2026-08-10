@@ -472,14 +472,14 @@ const definitions: Field[] = [
     key: 'system.url-prefix',
     label: t('Root URL'),
     placeholder: 'https://sentry.example.com',
-    help: t('The root web address which is used to communicate with the Sentry backend.'),
+    help: t('The root web address which is used to communicate with the Sentinel backend.'),
     defaultValue: () => `${document.location.protocol}//${document.location.host}`,
   },
   {
     key: 'system.admin-email',
     label: t('Admin Email'),
     placeholder: 'admin@example.com',
-    help: t('The technical contact for this Sentry installation.'),
+    help: t('The technical contact for this Sentinel installation.'),
     // TODO(dcramer): this should not be hardcoded to a component
     component: EmailField,
     defaultValue: () => ConfigStore.get('user').email,
@@ -488,7 +488,7 @@ const definitions: Field[] = [
     key: 'system.support-email',
     label: t('Support Email'),
     placeholder: 'support@example.com',
-    help: t('The support contact for this Sentry installation.'),
+    help: t('The support contact for this Sentinel installation.'),
     // TODO(dcramer): this should not be hardcoded to a component
     component: EmailField,
     defaultValue: () => ConfigStore.get('user').email,
@@ -497,7 +497,7 @@ const definitions: Field[] = [
     key: 'system.security-email',
     label: t('Security Email'),
     placeholder: 'security@example.com',
-    help: t('The security contact for this Sentry installation.'),
+    help: t('The security contact for this Sentinel installation.'),
     // TODO(dcramer): this should not be hardcoded to a component
     component: EmailField,
     defaultValue: () => ConfigStore.get('user').email,
@@ -513,7 +513,7 @@ const definitions: Field[] = [
   {
     key: 'auth.allow-registration',
     label: t('Allow Registration'),
-    help: t('Allow anyone to create an account and access this Sentry installation.'),
+    help: t('Allow anyone to create an account and access this Sentinel installation.'),
     component: BooleanField,
     defaultValue: () => false,
   },

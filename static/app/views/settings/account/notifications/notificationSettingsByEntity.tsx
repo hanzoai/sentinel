@@ -233,7 +233,7 @@ function NotificationSettingsByEntity({
             placeholder={
               entityType === 'project'
                 ? t('Project\u2026')
-                : t('Sentry Organization\u2026')
+                : t('Sentinel Organization\u2026')
             }
             name={entityType}
             options={groupedEntityOptions}

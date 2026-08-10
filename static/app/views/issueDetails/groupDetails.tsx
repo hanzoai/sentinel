@@ -867,7 +867,7 @@ function GroupDetails(props: GroupDetailsProps) {
   const isSampleError = data?.some(tag => tag.key === 'sample_event') ?? false;
 
   const getGroupDetailsTitle = () => {
-    const defaultTitle = 'Sentry';
+    const defaultTitle = 'Sentinel';
 
     if (!group) {
       return defaultTitle;

@@ -139,14 +139,14 @@ class Broadcasts extends Component<Props, State> {
               data-test-id="sidebar-broadcasts-panel"
               orientation={orientation}
               collapsed={collapsed}
-              title={t("What's new in Sentry")}
+              title={t("What's new in Sentinel")}
               hidePanel={hidePanel}
             >
               {loading ? (
                 <LoadingIndicator />
               ) : broadcasts.length === 0 ? (
                 <SidebarPanelEmpty>
-                  {t('No recent updates from the Sentry team.')}
+                  {t('No recent updates from the Sentinel team.')}
                 </SidebarPanelEmpty>
               ) : (
                 broadcasts.map(item => (

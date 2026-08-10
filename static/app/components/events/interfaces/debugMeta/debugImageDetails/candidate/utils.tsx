@@ -20,7 +20,7 @@ export function getImageFeatureDescription(type: ImageFeature) {
       return {
         label: t('sources'),
         description: t(
-          'Source code information allows Sentry to display source code context for stack frames'
+          'Source code information allows Sentinel to display source code context for stack frames'
         ),
       };
     case ImageFeature.HAS_SYMBOLS:
@@ -53,7 +53,7 @@ export function getSourceTooltipDescription(
 ) {
   if (source === INTERNAL_SOURCE) {
     return t(
-      "This debug information file is from Sentry's internal symbol server for this project"
+      "This debug information file is from Sentinel's internal symbol server for this project"
     );
   }
 

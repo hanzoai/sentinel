@@ -210,7 +210,7 @@ export default class RequestLog extends DeprecatedAsyncComponent<Props, State> {
         <div>
           <p>
             {t(
-              'This log shows the status of any outgoing webhook requests from Sentry to your integration.'
+              'This log shows the status of any outgoing webhook requests from Sentinel to your integration.'
             )}
           </p>
 

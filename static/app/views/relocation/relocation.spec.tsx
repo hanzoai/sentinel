@@ -225,7 +225,7 @@ describe('Relocation', function () {
       await waitFor(() => expect(fetchPublicKey).toHaveBeenCalled());
 
       expect(
-        await screen.findByText("Save Sentry's public key to your machine")
+        await screen.findByText("Save Sentinel's public key to your machine")
       ).toBeInTheDocument();
       expect(await screen.getByText('key.pub')).toBeInTheDocument();
       expect(await screen.getByRole('button', {name: 'Continue'})).toBeInTheDocument();
