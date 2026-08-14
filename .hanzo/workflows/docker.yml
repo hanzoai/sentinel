@@ -1,0 +1,29 @@
+# Publishes ghcr.io/hanzoai/sentry — the Hanzo-branded image self-hosted/Dockerfile
+# builds from this source, installing the wheel produced here (COPY /dist/*.whl).
+#
+# dist/ has to be populated before buildx starts, which is what pre-build-command
+# does. setup.py's build command runs build_assets (webpack), so node_modules must
+# exist before bdist_wheel; requirements-frozen.txt is the curated pin set the
+# image installs, so it is copied rather than re-derived from the build venv.
+name: docker
+on:
+  push:
+    branches: [main]
+    tags: ['v*']
+  workflow_dispatch:
+permissions:
+  contents: read
+  packages: write
+jobs:
+  docker:
+    uses: hanzoai/.github/.github/workflows/docker-build.yml@main
+    with:
+      image: ghcr.io/hanzoai/sentry
+      dockerfile: self-hosted/Dockerfile
+      pre-build-command: |
+        command -v yarn >/dev/null || npm install -g yarn@1.22.5
+        python3 -m pip install --quiet wheel setuptools
+        yarn install --frozen-lockfile
+        python3 setup.py bdist_wheel --build-number 0
+        cp requirements-frozen.txt dist/
+    secrets: inherit
