@@ -1,0 +1,29 @@
+# tsc over static/app, tests/js and fixtures/js-stubs — the widest check in this
+# repo that needs nothing but a checkout, with no postgres, redis, kafka, snuba or
+# symbolicator behind it.
+#
+# It covers what this fork changes: the TypeScript 7 tsconfig migration, and the
+# pkg.hanzo.ai npm route that `yarn install --frozen-lockfile` exercises first.
+name: frontend
+on:
+  push:
+    branches: [main]
+  pull_request:
+  workflow_dispatch:
+concurrency:
+  group: frontend-${{ github.ref }}
+  cancel-in-progress: true
+jobs:
+  typecheck:
+    runs-on: [hanzo-build-linux-amd64]
+    timeout-minutes: 45
+    env:
+      NODE_OPTIONS: '--max-old-space-size=8192'
+    steps:
+      - uses: actions/checkout@v4
+      - uses: actions/setup-node@v4
+        with:
+          node-version: '20.11.0'
+      - run: command -v yarn >/dev/null || npm install -g yarn@1.22.5
+      - run: yarn install --frozen-lockfile
+      - run: yarn tsc -p config/tsconfig.ci.json
