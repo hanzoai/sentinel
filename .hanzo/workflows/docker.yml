@@ -5,6 +5,8 @@
 # does. setup.py's build command runs build_assets (webpack), so node_modules must
 # exist before bdist_wheel; requirements-frozen.txt is the curated pin set the
 # image installs, so it is copied rather than re-derived from the build venv.
+# The wheel is built in a venv because the runner's system python is marked
+# externally managed (PEP 668) and refuses installs.
 name: docker
 on:
   push:
@@ -22,8 +24,9 @@ jobs:
       dockerfile: self-hosted/Dockerfile
       pre-build-command: |
         command -v yarn >/dev/null || npm install -g yarn@1.22.5
-        python3 -m pip install --quiet wheel setuptools
+        python3 -m venv /tmp/wheel-venv
+        /tmp/wheel-venv/bin/pip install --quiet wheel setuptools
         yarn install --frozen-lockfile
-        python3 setup.py bdist_wheel --build-number 0
+        /tmp/wheel-venv/bin/python setup.py bdist_wheel --build-number 0
         cp requirements-frozen.txt dist/
     secrets: inherit
