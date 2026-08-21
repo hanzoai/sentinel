@@ -80,7 +80,7 @@ describe('SentryAppExternalIssueForm', () => {
           data: {
             action: 'create',
             description:
-              'Sentry Issue: [SEN123](https://sentry.io/organizations/sentry/issues/123/?project=1&referrer=Sample%20App)',
+              'Sentinel Issue: [SEN123](https://sentry.io/organizations/sentry/issues/123/?project=1&referrer=Sample%20App)',
             groupId: '1',
             numbers: 'number_1',
             title: 'ApiError: Broken',
@@ -109,7 +109,7 @@ describe('SentryAppExternalIssueForm', () => {
         referrer: sentryApp.name,
       });
       expect(screen.getByRole('textbox', {name: 'Description'})).toHaveValue(
-        `Sentry Issue: [${group.shortId}](${url})`
+        `Sentinel Issue: [${group.shortId}](${url})`
       );
     });
   });

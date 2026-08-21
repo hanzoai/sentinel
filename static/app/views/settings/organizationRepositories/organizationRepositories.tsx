@@ -36,7 +36,7 @@ function OrganizationRepositories({itemList, onRepositoryChange, organization}: 
         <div className="m-b-2">
           <TextBlock>
             {t(
-              "Connecting a repository allows Sentry to capture commit data via webhooks. This enables features like suggested assignees and resolving issues via commit message. Once you've connected a repository, you can associate commits with releases via the API."
+              "Connecting a repository allows Sentinel to capture commit data via webhooks. This enables features like suggested assignees and resolving issues via commit message. Once you've connected a repository, you can associate commits with releases via the API."
             )}
             &nbsp;
             {tct('See our [link:documentation] for more details.', {
@@ -68,9 +68,9 @@ function OrganizationRepositories({itemList, onRepositoryChange, organization}: 
         <Panel>
           <EmptyMessage
             icon={<IconCommit size="xl" />}
-            title={t('Sentry is better with commit data')}
+            title={t('Sentinel is better with commit data')}
             description={t(
-              'Adding one or more repositories will enable enhanced releases and the ability to resolve Sentry Issues via git message.'
+              'Adding one or more repositories will enable enhanced releases and the ability to resolve Sentinel Issues via git message.'
             )}
             action={
               <Button external href="https://docs.sentry.io/learn/releases/">

@@ -65,7 +65,7 @@ describe('OrganizationAuditLog', function () {
       context: routerContext,
     });
 
-    expect(await screen.findByText('Sentry Staff')).toBeInTheDocument();
+    expect(await screen.findByText('Sentinel Staff')).toBeInTheDocument();
     expect(screen.getAllByText('Foo Bar')).toHaveLength(2);
   });
 

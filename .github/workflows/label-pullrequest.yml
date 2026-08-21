@@ -57,13 +57,9 @@ jobs:
             🚨 **Warning:** This pull request contains Frontend and Backend changes!
 
 
-            It's discouraged to make changes to Sentry's Frontend and Backend
+            It's discouraged to make changes to Sentinel's Frontend and Backend
             in a single pull request. The Frontend and Backend are **not**
             atomically deployed. If the changes are interdependent of each
             other, they **must** be separated into two pull requests and be made
             forward or backwards compatible, such that the Backend or Frontend
             can be safely deployed independently.
-
-
-            Have questions? Please ask in the [`#discuss-dev-infra`
-            channel](https://app.slack.com/client/T024ZCV9U/CTJL7358X).

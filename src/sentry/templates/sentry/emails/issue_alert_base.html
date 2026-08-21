@@ -41,7 +41,7 @@
           Set up in Slack
         </a>
       {% endif %}
-      <a href="{{ link }}" class="btn view-on-sentry">View on Sentry</a>
+      <a href="{{ link }}" class="btn view-on-sentry">View on Sentinel</a>
     </div>
   </div>
 {% endblock %}
@@ -88,7 +88,7 @@
       </div>
 
       <div class="notice">Details about this issue are not shown in this notification since enhanced privacy
-        controls are enabled. For more details about this issue, <a href="{{ link }}">view this issue on Sentry</a>.</div>
+        controls are enabled. For more details about this issue, <a href="{{ link }}">view this issue on Sentinel</a>.</div>
     {% else %}
       <table class="event-list">
         <tr>
@@ -290,14 +290,14 @@
 
     {# support for gmail actions #}
     <div itemscope itemtype="http://schema.org/EmailMessage">
-      <meta itemprop="description" content="View Issue Details in Sentry"/>
+      <meta itemprop="description" content="View Issue Details in Sentinel"/>
       <div itemprop="action" itemscope itemtype="http://schema.org/ViewAction">
         <link itemprop="url" href="{{ link }}"/>
-        <meta itemprop="name" content="View in Sentry"/>
+        <meta itemprop="name" content="View in Sentinel"/>
       </div>
       <div itemprop="publisher" itemscope itemtype="http://schema.org/Organization">
-        <meta itemprop="name" content="GetSentry"/>
-        <link itemprop="url" href="https://sentry.io/"/>
+        <meta itemprop="name" content="Hanzo AI, Inc."/>
+        <link itemprop="url" href="https://hanzo.ai/"/>
       </div>
     </div>
   </div>

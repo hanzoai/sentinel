@@ -114,7 +114,7 @@ describe('IntegrationCodeMappings', function () {
     await userEvent.click(screen.getByRole('button', {name: 'Add Code Mapping'}));
     expect(screen.getByRole('dialog')).toBeInTheDocument();
 
-    await selectEvent.select(screen.getByText('Choose Sentry project'), projects[1].slug);
+    await selectEvent.select(screen.getByText('Choose Sentinel project'), projects[1].slug);
     await selectEvent.select(screen.getByText('Choose repo'), repos[1].name);
 
     await userEvent.type(

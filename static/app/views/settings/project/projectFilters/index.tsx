@@ -34,7 +34,7 @@ function ProjectFilters(props: Props) {
       <SettingsPageHeader title={t('Inbound Data Filters')} />
       <TextBlock>
         {t(
-          'Filters allow you to prevent Sentry from storing events in certain situations. Filtered events are tracked separately from rate limits, and do not apply to any project quotas.'
+          'Filters allow you to prevent Sentinel from storing events in certain situations. Filtered events are tracked separately from rate limits, and do not apply to any project quotas.'
         )}
       </TextBlock>
 

@@ -24,7 +24,7 @@ function DeletionInProgress({organization}: OrganizationProps) {
       <Layout.Main>
         <Alert type="warning" showIcon>
           {tct(
-            'The [organization] organization is currently in the process of being deleted from Sentry.',
+            'The [organization] organization is currently in the process of being deleted from Sentinel.',
             {
               organization: <strong>{organization.slug}</strong>,
             }

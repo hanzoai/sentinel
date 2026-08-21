@@ -173,14 +173,14 @@ export function InviteBanner({
       <StyledCard>
         <CardTitleContainer>
           <CardTitleContent>
-            <CardTitle>{t('Bring your full GitHub team on board in Sentry')}</CardTitle>
+            <CardTitle>{t('Bring your full GitHub team on board in Sentinel')}</CardTitle>
             <Subtitle>
               {tct('[missingMemberCount] missing members', {
                 missingMemberCount: missingMembers.length,
               })}
               <QuestionTooltip
                 title={t(
-                  "Based on the last 30 days of GitHub commit data, there are team members committing code to Sentry projects that aren't in your Sentry organization"
+                  "Based on the last 30 days of GitHub commit data, there are team members committing code to Sentinel projects that aren't in your Sentinel organization"
                 )}
                 size="xs"
               />

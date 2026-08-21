@@ -1,7 +1,7 @@
 {% if requester %}
 {{ requester }} is requesting to add {{ name }} to the #{{ team.slug }} team.
 {% else %}
-{{ name }} is requesting access to the #{{ team.slug }} team on Sentry.
+{{ name }} is requesting access to the #{{ team.slug }} team on Sentinel.
 {% endif %}
 
 You can accept or decline this request in via the pending requests panel:

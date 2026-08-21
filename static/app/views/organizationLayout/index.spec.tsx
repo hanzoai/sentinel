@@ -106,7 +106,7 @@ describe('OrganizationLayout', function () {
     );
 
     const inProgress = await screen.findByText(
-      'currently in the process of being deleted from Sentry.',
+      'currently in the process of being deleted from Sentinel.',
       {exact: false}
     );
 

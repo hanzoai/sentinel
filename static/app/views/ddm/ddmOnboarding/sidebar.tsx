@@ -174,7 +174,7 @@ function OnboardingContent({
       <FallbackContentWrapper>
         <div>
           {tct(
-            'Fiddlesticks. This checklist isn’t available for your [project] project yet, but for now, go to Sentry docs for installation details.',
+            'Fiddlesticks. This checklist isn’t available for your [project] project yet, but for now, go to Sentinel docs for installation details.',
             {project: currentProject.slug}
           )}
         </div>

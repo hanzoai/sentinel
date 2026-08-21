@@ -63,7 +63,7 @@ function CardHeader({
         ) : (
           <ConfirmDelete
             message={t(
-              'After removing this Public Key, your Relay will no longer be able to communicate with Sentry and events will be dropped.'
+              'After removing this Public Key, your Relay will no longer be able to communicate with Sentinel and events will be dropped.'
             )}
             onConfirm={onDelete(publicKey)}
             confirmInput={name}

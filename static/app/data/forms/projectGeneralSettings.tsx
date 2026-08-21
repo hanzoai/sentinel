@@ -153,7 +153,7 @@ export const fields: Record<string, Field> = {
     // `props` are the props given to FormField
     setValue: (val, props) => props.organization?.[props.name] && val,
     label: t('Enable JavaScript source fetching'),
-    help: t('Allow Sentry to scrape missing JavaScript source context when possible'),
+    help: t('Allow Sentinel to scrape missing JavaScript source context when possible'),
   },
   securityToken: {
     name: 'securityToken',

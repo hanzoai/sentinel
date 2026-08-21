@@ -114,7 +114,7 @@ export function CodeOwnerErrors({
       case 'missing_user_emails':
         return (
           <ErrorMessage
-            message={`The following emails do not have an Sentry user in the organization: ${orgSlug}`}
+            message={`The following emails do not have an Sentinel user in the organization: ${orgSlug}`}
             values={values}
             link={`/settings/${orgSlug}/members/`}
             linkValue="Invite Users"
@@ -172,7 +172,7 @@ export function CodeOwnerErrors({
               </AlertContentContainer>
             }
           >
-            {`There were ${errorCount} ownership issues within Sentry on the latest sync with the CODEOWNERS file`}
+            {`There were ${errorCount} ownership issues within Sentinel on the latest sync with the CODEOWNERS file`}
           </Alert>
         );
       })}

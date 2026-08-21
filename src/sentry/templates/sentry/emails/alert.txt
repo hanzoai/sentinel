@@ -1,6 +1,6 @@
 {% spaceless %}
 {% autoescape off %}
-A new alert has been reported in Sentry:
+A new alert has been reported in Sentinel:
 
     {{ alert.message }}
 

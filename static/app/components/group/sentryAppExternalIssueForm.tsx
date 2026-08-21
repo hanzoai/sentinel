@@ -57,7 +57,7 @@ function SentryAppExternalIssueForm({
             const queryParams = {referrer: appName};
             const url = addQueryParamsToExistingUrl(group.permalink, queryParams);
             const shortId = group.shortId;
-            return t('Sentry Issue: [%s](%s)%s', shortId, url, stackTrace);
+            return t('Sentinel Issue: [%s](%s)%s', shortId, url, stackTrace);
           default:
             return '';
         }

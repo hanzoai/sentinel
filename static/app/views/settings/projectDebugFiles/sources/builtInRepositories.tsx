@@ -100,7 +100,7 @@ function BuiltInRepositories({
                 name="builtinSymbolSources"
                 label={SECTION_TITLE}
                 help={t(
-                  'Configures which built-in repositories Sentry should use to resolve debug files.'
+                  'Configures which built-in repositories Sentinel should use to resolve debug files.'
                 )}
                 placeholder={t('Select built-in repository')}
                 value={validBuiltInSymbolSources}

@@ -58,7 +58,7 @@ export function PublicKey({publicKey, onComplete}: StepProps) {
 
   return (
     <Wrapper data-test-id="public-key">
-      <StepHeading step={2}>{t("Save Sentry's public key to your machine")}</StepHeading>
+      <StepHeading step={2}>{t("Save Sentinel's public key to your machine")}</StepHeading>
       {publicKey ? loaded : unloaded}
     </Wrapper>
   );

@@ -43,7 +43,7 @@ type Props = {
 
 function AdminLayout({children, ...props}: Props) {
   return (
-    <SentryDocumentTitle noSuffix title={t('Sentry Admin')}>
+    <SentryDocumentTitle noSuffix title={t('Sentinel Admin')}>
       <Page>
         <BreadcrumbProvider>
           <SettingsLayout renderNavigation={renderAdminNavigation} {...props}>

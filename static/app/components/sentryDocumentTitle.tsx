@@ -3,7 +3,7 @@ import {createContext, useContext, useEffect, useMemo} from 'react';
 type Props = {
   children?: React.ReactNode;
   /**
-   * Should the ` - Sentry` suffix be excluded?
+   * Should the ` - Sentinel` suffix be excluded?
    */
   noSuffix?: boolean;
   /**
@@ -21,7 +21,7 @@ type Props = {
   title?: string;
 };
 
-const DEFAULT_PAGE_TITLE = 'Sentry';
+const DEFAULT_PAGE_TITLE = 'Sentinel';
 
 const DocumentTitleContext = createContext(DEFAULT_PAGE_TITLE);
 
@@ -60,7 +60,7 @@ function SentryDocumentTitle({
     }
 
     if (pageTitle !== '') {
-      return `${pageTitle} — Sentry`;
+      return `${pageTitle} — Sentinel`;
     }
 
     return DEFAULT_PAGE_TITLE;

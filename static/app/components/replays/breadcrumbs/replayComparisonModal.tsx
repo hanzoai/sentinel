@@ -88,7 +88,7 @@ export default function ReplayComparisonModal({
         {leftBody && rightBody && leftBody === rightBody && (
           <Alert type="warning" showIcon>
             {t(
-              "Sentry wasn't able to identify the correct event to display a diff for this hydration error."
+              "Sentinel wasn't able to identify the correct event to display a diff for this hydration error."
             )}
           </Alert>
         )}

@@ -5,24 +5,24 @@ import SentryDocumentTitle from './sentryDocumentTitle';
 describe('SentryDocumentTitle', () => {
   it('sets the docuemnt title', () => {
     render(<SentryDocumentTitle title="This is a test" />);
-    expect(document.title).toBe('This is a test — Sentry');
+    expect(document.title).toBe('This is a test — Sentinel');
   });
 
   it('adds a organization slug', () => {
     render(<SentryDocumentTitle orgSlug="org" title="This is a test" />);
-    expect(document.title).toBe('This is a test — org — Sentry');
+    expect(document.title).toBe('This is a test — org — Sentinel');
   });
 
   it('adds a project slug', () => {
     render(<SentryDocumentTitle projectSlug="project" title="This is a test" />);
-    expect(document.title).toBe('This is a test — project — Sentry');
+    expect(document.title).toBe('This is a test — project — Sentinel');
   });
 
   it('adds a organization and project slug', () => {
     render(
       <SentryDocumentTitle orgSlug="org" projectSlug="project" title="This is a test" />
     );
-    expect(document.title).toBe('This is a test — org — project — Sentry');
+    expect(document.title).toBe('This is a test — org — project — Sentinel');
   });
 
   it('sets the title without suffix', () => {
@@ -37,12 +37,12 @@ describe('SentryDocumentTitle', () => {
       </SentryDocumentTitle>
     );
 
-    expect(document.title).toBe('child title — Sentry');
+    expect(document.title).toBe('child title — Sentinel');
 
     rerender(
       <SentryDocumentTitle title="This is a test">new Content</SentryDocumentTitle>
     );
 
-    expect(document.title).toBe('This is a test — Sentry');
+    expect(document.title).toBe('This is a test — Sentinel');
   });
 });

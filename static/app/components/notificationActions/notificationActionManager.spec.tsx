@@ -126,16 +126,16 @@ describe('Adds, deletes, and updates notification actions', function () {
     );
 
     await userEvent.click(screen.getByText('Add Action'));
-    expect(screen.getByText('Send a Sentry notification')).toBeInTheDocument();
+    expect(screen.getByText('Send a Sentinel notification')).toBeInTheDocument();
     expect(screen.getByText('Send a Slack notification')).toBeInTheDocument();
     expect(screen.getByText('Send a Pagerduty notification')).toBeInTheDocument();
     expect(screen.getByText('Send an Opsgenie notification')).toBeInTheDocument();
 
-    await userEvent.click(screen.getByText('Send a Sentry notification'));
+    await userEvent.click(screen.getByText('Send a Sentinel notification'));
 
     // Can only have 1 sentry notification
     await userEvent.click(screen.getByText('Add Action'));
-    expect(screen.queryByText('Send a Sentry notification')).not.toBeInTheDocument();
+    expect(screen.queryByText('Send a Sentinel notification')).not.toBeInTheDocument();
     expect(screen.getByText('Send a Slack notification')).toBeInTheDocument();
     expect(screen.getByText('Send a Pagerduty notification')).toBeInTheDocument();
     expect(screen.getByText('Send an Opsgenie notification')).toBeInTheDocument();

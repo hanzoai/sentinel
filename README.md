@@ -1,55 +1,31 @@
-<p align="center">
-  <p align="center">
-    <a href="https://sentry.io/?utm_source=github&utm_medium=logo" target="_blank">
-      <img src="https://sentry-brand.storage.googleapis.com/sentry-wordmark-dark-280x84.png" alt="Sentry" width="280" height="84">
-    </a>
-  </p>
-  <p align="center">
-    Users and logs provide clues. Sentry provides answers.
-  </p>
-</p>
+<p align="center"><img src=".github/hero.svg" alt="Sentinel" width="880"></p>
 
-# What's Sentry?
+# Sentinel
 
-Sentry is a developer-first error tracking and performance monitoring platform that helps developers see what actually matters, solve quicker, and learn continuously about their applications.
+Error tracking and performance monitoring for the Hanzo cloud. Sentinel receives
+events from your applications, groups them into issues, and tells you which ones
+are new, regressed, or getting worse.
 
-<p align="center">
-  <img src="https://github.com/getsentry/sentry/raw/master/.github/screenshots/projects.png" width="270">
-  <img src="https://github.com/getsentry/sentry/raw/master/.github/screenshots/issue-details.png" width="270">
-  <img src="https://github.com/getsentry/sentry/raw/master/.github/screenshots/transaction-summary.png" width="270">
-  <img src="https://github.com/getsentry/sentry/raw/master/.github/screenshots/releases.png" width="270">
-</p>
+Sentinel speaks the **Sentry wire protocol**, so the existing ecosystem of client
+SDKs reports to it unchanged — a DSN pointing at your Sentinel instance is the
+only configuration difference. There is no Sentinel-specific SDK to adopt, and
+none is planned; the protocol is the interface.
 
-## Official Sentry SDKs
+## Running it
 
-- [JavaScript](https://github.com/getsentry/sentry-javascript)
-- [Electron](https://github.com/getsentry/sentry-electron/)
-- [React-Native](https://github.com/getsentry/sentry-react-native)
-- [Python](https://github.com/getsentry/sentry-python)
-- [Ruby](https://github.com/getsentry/sentry-ruby)
-- [PHP](https://github.com/getsentry/sentry-php)
-- [Laravel](https://github.com/getsentry/sentry-laravel)
-- [Go](https://github.com/getsentry/sentry-go)
-- [Rust](https://github.com/getsentry/sentry-rust)
-- [Java/Kotlin](https://github.com/getsentry/sentry-java)
-- [Objective-C/Swift](https://github.com/getsentry/sentry-cocoa)
-- [C\#/F\#](https://github.com/getsentry/sentry-dotnet)
-- [C/C++](https://github.com/getsentry/sentry-native)
-- [Dart](https://github.com/getsentry/sentry-dart)
-- [Perl](https://github.com/getsentry/perl-raven)
-- [Clojure](https://github.com/getsentry/sentry-clj/)
-- [Elixir](https://github.com/getsentry/sentry-elixir)
-- [Unity](https://github.com/getsentry/sentry-unity)
-- [Unreal Engine](https://github.com/getsentry/sentry-unreal)
+The deployed image is `ghcr.io/hanzoai/sentry`. Deployment is declared in the
+`universe` repository and reconciled by Hanzo CD, like every other service.
 
-# Resources
+## Attribution and licensing
 
-- [Documentation](https://docs.sentry.io/)
-- [Community](https://forum.sentry.io/) (Bugs, feature requests,
-  general questions)
-- [Discord](https://discord.gg/PXa5Apfe7K)
-- [Contributing](https://docs.sentry.io/internal/contributing/)
-- [Bug Tracker](https://github.com/getsentry/sentry/issues)
-- [Code](https://github.com/getsentry/sentry)
-- [Transifex](https://www.transifex.com/getsentry/sentry/) (Translate
-  Sentry\!)
+Sentinel is a fork of [Sentry](https://github.com/getsentry/sentry) by Functional
+Software, Inc., used under the **Functional Source License, Version 1.0, Apache
+2.0 Change License** (`FSL-1.0-Apache-2.0`). See [`LICENSE`](LICENSE) for the
+terms and [`NOTICE`](NOTICE) for attribution; both are required and are kept
+current.
+
+The FSL grants no trademark rights. "Sentry" is a trademark of Functional
+Software, Inc., and this project is neither affiliated with nor endorsed by them.
+Upstream marks are not used as branding here — where the name appears in this
+codebase it refers to the module namespace (`src/sentry/`), the wire protocol, or
+upstream attribution, none of which are brand usage.
