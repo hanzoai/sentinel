@@ -69,7 +69,7 @@ function OrganizationApiKeysList({
       <TextBlock>
         {tct(
           `API keys grant access to the [api:developer web API].
-          If you're looking to configure a Sentry client, you'll need a
+          If you're looking to configure a Sentinel client, you'll need a
           client key which is available in your project settings.`,
           {
             api: <ExternalLink href="https://docs.sentry.io/api/" />,
@@ -79,7 +79,7 @@ function OrganizationApiKeysList({
 
       <AlertLink to="/settings/account/api/auth-tokens/" priority="info">
         {tct(
-          'Until Sentry supports OAuth, you might want to switch to using [tokens:User Auth Tokens] instead.',
+          'Until Sentinel supports OAuth, you might want to switch to using [tokens:User Auth Tokens] instead.',
           {
             tokens: <u />,
           }

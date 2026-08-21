@@ -117,7 +117,7 @@ describe('OrganizationAuthTokensNewAuthToken', function () {
     expect(screen.queryByLabelText('Generated token')).not.toBeInTheDocument();
 
     expect(indicators.addErrorMessage).toHaveBeenCalledWith(
-      'You have to configure `system.url-prefix` in your Sentry instance in order to generate tokens.'
+      'You have to configure `system.url-prefix` in your Sentinel instance in order to generate tokens.'
     );
 
     expect(mock).toHaveBeenCalledWith(

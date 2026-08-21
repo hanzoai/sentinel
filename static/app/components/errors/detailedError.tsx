@@ -56,10 +56,10 @@ function DetailedError({className, heading, message, onRetry, hideSupportLinks}:
                   {t('Fill out a report')}
                 </Button>
               )}
-              <Button priority="link" external href="https://status.sentry.io/">
+              <Button priority="link" external href="https://status.hanzo.ai">
                 {t('Service status')}
               </Button>
-              <Button priority="link" external href="https://sentry.io/support/">
+              <Button priority="link" external href="https://hanzo.ai/support">
                 {t('Contact support')}
               </Button>
             </ButtonBar>

@@ -44,7 +44,7 @@ class JiraDescriptorEndpoint(Endpoint):
                 "description": "Connect your Sentry organization to one or more of your Jira cloud instances. Get started streamlining your bug-squashing workflow by allowing your Sentry and Jira instances to work together.",
                 "key": JIRA_KEY,
                 "baseUrl": absolute_uri(),
-                "vendor": {"name": "Sentry", "url": "https://sentry.io"},
+                "vendor": {"name": "Hanzo AI", "url": "https://hanzo.ai"},
                 "authentication": {"type": "jwt"},
                 "lifecycle": {
                     "installed": "/extensions/jira/installed/",

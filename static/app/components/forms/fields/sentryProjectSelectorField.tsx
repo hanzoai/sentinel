@@ -20,7 +20,7 @@ export interface RenderFieldProps extends InputFieldProps {
 function SentryProjectSelectorField({
   projects,
   avatarSize = 20,
-  placeholder = t('Choose Sentry project'),
+  placeholder = t('Choose Sentinel project'),
   valueIsSlug,
   ...props
 }: RenderFieldProps) {

@@ -42,27 +42,27 @@ function getConfiguration({organization}: ConfigParams): NavigationSection[] {
           path: `${pathPrefix}/subscriptions/`,
           title: t('Subscriptions'),
           description: t(
-            'Change Sentry marketing subscriptions you are subscribed to (GDPR)'
+            'Change Sentinel marketing subscriptions you are subscribed to (GDPR)'
           ),
         },
         {
           path: `${pathPrefix}/authorizations/`,
           title: t('Authorized Applications'),
           description: t(
-            'Manage third-party applications that have access to your Sentry account'
+            'Manage third-party applications that have access to your Sentinel account'
           ),
         },
         {
           path: `${pathPrefix}/identities/`,
           title: t('Identities'),
           description: t(
-            'Manage your third-party identities that are associated to Sentry'
+            'Manage your third-party identities that are associated to Sentinel'
           ),
         },
         {
           path: `${pathPrefix}/close-account/`,
           title: t('Close Account'),
-          description: t('Permanently close your Sentry account'),
+          description: t('Permanently close your Sentinel account'),
         },
       ],
     },
@@ -78,7 +78,7 @@ function getConfiguration({organization}: ConfigParams): NavigationSection[] {
           path: `${pathPrefix}/api/auth-tokens/`,
           title: t('User Auth Tokens'),
           description: t(
-            "Authentication tokens allow you to perform actions against the Sentry API on behalf of your account. They're the easiest way to get started using the API."
+            "Authentication tokens allow you to perform actions against the Sentinel API on behalf of your account. They're the easiest way to get started using the API."
           ),
         },
         ...HookStore.get('settings:api-navigation-config').flatMap(cb =>

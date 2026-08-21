@@ -15,14 +15,14 @@
         <p>{% trans "If you're continually seeing this issue, try the following:" %}</p>
 
         <ol>
-          <li>{% trans "Clear cookies (at least for Sentry's domain)." %}</li>
+          <li>{% trans "Clear cookies (at least for Sentinel's domain)." %}</li>
           <li>{% trans "Reload the page you're trying to submit (don't re-submit data)." %}</li>
           <li>{% trans "Re-enter the information, and submit the form again." %}</li>
           <li>{% trans "Ensure the URL does not contain an extra 	&quot;/&quot; anywhere (eg: https://foo//saml -> https://foo/saml)." %}</li>
         </ol>
 
         {% if no_referer %}
-          <p>You are seeing this message because Sentry requires a 'Referer
+          <p>You are seeing this message because Sentinel requires a 'Referer
            header' to be sent by your Web browser, but none was sent. This header is
            required for security reasons, to ensure that your browser is not being
            hijacked by third parties.</p>

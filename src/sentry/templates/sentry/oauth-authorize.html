@@ -11,7 +11,7 @@
     {% csrf_token %}
 
     <div>
-      <p><strong>{{ application.name }}</strong> is requesting access to your Sentry account ({{ user.username }}):</p>
+      <p><strong>{{ application.name }}</strong> is requesting access to your Sentinel account ({{ user.username }}):</p>
       <ul>
         <li>Access to your account details, including your name and email address.</li>
         {% for permission in permissions %}

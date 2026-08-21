@@ -9,7 +9,7 @@ export const fields: {[key: string]: Field} = {
     name: 'personalActivityNotifications',
     type: 'boolean',
     label: t('Notify Me About My Own Activity'),
-    help: t('Enable this to receive notifications about your own actions on Sentry.'),
+    help: t('Enable this to receive notifications about your own actions on Sentinel.'),
   },
   selfAssignOnResolve: {
     name: 'selfAssignOnResolve',

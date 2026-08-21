@@ -93,7 +93,7 @@ export function addErrorMessage(msg: React.ReactNode, options?: Options) {
   // to prevent page crashes.
   return addMessageWithType('error')(
     t(
-      "You've hit an issue, fortunately we use Sentry to monitor Sentry. So it's likely we're already looking into this!"
+      "You've hit an issue, fortunately we use Sentinel to monitor Sentinel. So it's likely we're already looking into this!"
     ),
     options
   );

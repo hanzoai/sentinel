@@ -68,7 +68,7 @@ class ProjectPluginDetails extends DeprecatedAsyncView<Props, State> {
     if (plugin?.name) {
       return plugin.name;
     }
-    return 'Sentry';
+    return 'Sentinel';
   }
 
   getEndpoints(): ReturnType<DeprecatedAsyncView['getEndpoints']> {

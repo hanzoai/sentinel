@@ -26,15 +26,15 @@
 {% block title %} {% trans "Bitbucket-Server Setup" %} | {{ block.super }} {% endblock %}
 
 {% block main %}
-<h3>{% trans "Connect Sentry with your App" %}</h3>
-  <p>{% trans "Add your Bitbucket Server App credentials to Sentry." %}</p>
+<h3>{% trans "Connect Sentinel with your App" %}</h3>
+  <p>{% trans "Add your Bitbucket Server App credentials to Sentinel." %}</p>
   <p class="alert alert-block flex">
     <i class="icon icon-exclamation"></i>
     <span>
         {% blocktrans %}
-        You must complete the <a href="https://docs.sentry.io/product/integrations/source-code-mgmt/bitbucket/#bitbucket-server">required steps</a>
+        You must complete the required steps
 
-        in Bitbucket Server before attempting to connect with Sentry.
+        in Bitbucket Server before attempting to connect with Sentinel.
         {% endblocktrans %}
     </span>
   </p>

@@ -273,7 +273,7 @@ class UsageStatsOrganization<
       },
       accepted: {
         title: tct('Accepted [dataCategory]', {dataCategory: dataCategoryName}),
-        help: tct('Accepted [dataCategory] were successfully processed by Sentry', {
+        help: tct('Accepted [dataCategory] were successfully processed by Sentinel', {
           dataCategory,
         }),
         score: accepted,

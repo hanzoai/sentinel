@@ -132,12 +132,12 @@ describe('Sidebar', function () {
 
       await userEvent.click(await screen.findByText("What's new"));
       expect(await screen.findByRole('dialog')).toBeInTheDocument();
-      expect(screen.getByText("What's new in Sentry")).toBeInTheDocument();
+      expect(screen.getByText("What's new in Sentinel")).toBeInTheDocument();
 
       const oldPath = routerContext.context.location.pathname;
       routerContext.context.location.pathname = '/other/path';
       rerender(getElement());
-      expect(screen.queryByText("What's new in Sentry")).not.toBeInTheDocument();
+      expect(screen.queryByText("What's new in Sentinel")).not.toBeInTheDocument();
       routerContext.context.location.pathname = oldPath;
     });
 
@@ -169,14 +169,14 @@ describe('Sidebar', function () {
       await userEvent.click(await screen.findByText("What's new"));
 
       expect(await screen.findByRole('dialog')).toBeInTheDocument();
-      expect(screen.getByText("What's new in Sentry")).toBeInTheDocument();
+      expect(screen.getByText("What's new in Sentinel")).toBeInTheDocument();
       expect(
-        screen.getByText('No recent updates from the Sentry team.')
+        screen.getByText('No recent updates from the Sentinel team.')
       ).toBeInTheDocument();
 
       // Close the sidebar
       await userEvent.click(screen.getByText("What's new"));
-      expect(screen.queryByText("What's new in Sentry")).not.toBeInTheDocument();
+      expect(screen.queryByText("What's new in Sentinel")).not.toBeInTheDocument();
       await tick();
     });
 
@@ -189,7 +189,7 @@ describe('Sidebar', function () {
       await userEvent.click(await screen.findByText("What's new"), {delay: null});
 
       expect(await screen.findByRole('dialog')).toBeInTheDocument();
-      expect(screen.getByText("What's new in Sentry")).toBeInTheDocument();
+      expect(screen.getByText("What's new in Sentinel")).toBeInTheDocument();
 
       const broadcastTitle = screen.getByText(broadcast.title);
       expect(broadcastTitle).toBeInTheDocument();
@@ -208,7 +208,7 @@ describe('Sidebar', function () {
 
       // Close the sidebar
       await userEvent.click(screen.getByText("What's new"));
-      expect(screen.queryByText("What's new in Sentry")).not.toBeInTheDocument();
+      expect(screen.queryByText("What's new in Sentinel")).not.toBeInTheDocument();
       await tick();
     });
 
@@ -220,7 +220,7 @@ describe('Sidebar', function () {
       await userEvent.click(await screen.findByRole('link', {name: "What's new"}), {
         delay: null,
       });
-      expect(await screen.findByText("What's new in Sentry")).toBeInTheDocument();
+      expect(await screen.findByText("What's new in Sentinel")).toBeInTheDocument();
 
       act(() => jest.advanceTimersByTime(500));
 

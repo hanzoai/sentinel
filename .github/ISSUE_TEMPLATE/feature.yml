@@ -5,9 +5,9 @@ body:
     id: problem
     attributes:
       label: Problem Statement
-      description: What problem could Sentry solve that it doesn't?
+      description: What problem could Sentinel solve that it doesn't?
       placeholder: |-
-        I want to make whirled peas, but Sentry doesn't blend.
+        I want to make whirled peas, but Sentinel doesn't blend.
     validations:
       required: true
   - type: textarea
@@ -16,7 +16,7 @@ body:
       label: Solution Brainstorm
       description: We know you have bright ideas to share ... share away, friend.
       placeholder: |-
-        Add a blender to Sentry.
+        Add a blender to Sentinel.
     validations:
       required: false
   - type: dropdown
@@ -70,10 +70,3 @@ body:
         # end product areas
     validations:
       required: true
-  - type: markdown
-    attributes:
-      value: |-
-        ## Thanks 🙏
-        Check our [triage docs](https://open.sentry.io/triage/) for what to expect next.
-    validations:
-      required: false

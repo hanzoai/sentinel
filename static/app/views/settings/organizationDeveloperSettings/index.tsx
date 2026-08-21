@@ -127,12 +127,12 @@ class OrganizationDeveloperSettings extends DeprecatedAsyncView<Props, State> {
 
     return (
       <Panel>
-        <PanelHeader>{t('Sentry Functions')}</PanelHeader>
+        <PanelHeader>{t('Sentinel Functions')}</PanelHeader>
         <PanelBody>
           {sentryFunctions?.length ? (
             sentryFunctions.map(this.renderSentryFunction)
           ) : (
-            <EmptyMessage>{t('No Sentry Functions have been created yet.')}</EmptyMessage>
+            <EmptyMessage>{t('No Sentinel Functions have been created yet.')}</EmptyMessage>
           )}
         </PanelBody>
       </Panel>
@@ -212,7 +212,7 @@ class OrganizationDeveloperSettings extends DeprecatedAsyncView<Props, State> {
     ];
 
     if (organization.features.includes('sentry-functions')) {
-      tabs.push(['sentryfx', t('Sentry Function')]);
+      tabs.push(['sentryfx', t('Sentinel Function')]);
     }
 
     return (
@@ -222,7 +222,7 @@ class OrganizationDeveloperSettings extends DeprecatedAsyncView<Props, State> {
           body={
             <Fragment>
               {t(
-                'Create integrations that interact with Sentry using the REST API and webhooks. '
+                'Create integrations that interact with Sentinel using the REST API and webhooks. '
               )}
               <br />
               {tct('For more information [link: see our docs].', {

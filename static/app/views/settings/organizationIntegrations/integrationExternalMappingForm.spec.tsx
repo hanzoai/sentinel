@@ -56,12 +56,12 @@ describe('IntegrationExternalMappingForm', function () {
   it('renders with no mapping provided as a form', async function () {
     render(<IntegrationExternalMappingForm type="user" {...baseProps} />);
     expect(await screen.findByPlaceholderText('@username')).toBeInTheDocument();
-    expect(screen.getByText('Select Sentry User')).toBeInTheDocument();
+    expect(screen.getByText('Select Sentinel User')).toBeInTheDocument();
     expect(screen.getByTestId('form-submit')).toBeInTheDocument();
   });
   it('renders with no mapping as an inline field', async function () {
     render(<IntegrationExternalMappingForm isInline type="user" {...baseProps} />);
-    expect(await screen.findByText('Select Sentry User')).toBeInTheDocument();
+    expect(await screen.findByText('Select Sentinel User')).toBeInTheDocument();
     expect(screen.queryByPlaceholderText('@username')).not.toBeInTheDocument();
     expect(screen.queryByTestId('form-submit')).not.toBeInTheDocument();
   });
@@ -111,7 +111,7 @@ describe('IntegrationExternalMappingForm', function () {
     expect(
       await screen.findByDisplayValue(MOCK_TEAM_MAPPING.externalName)
     ).toBeInTheDocument();
-    expect(screen.getByText('Select Sentry Team')).toBeInTheDocument();
+    expect(screen.getByText('Select Sentinel Team')).toBeInTheDocument();
     expect(screen.getByTestId('form-submit')).toBeInTheDocument();
   });
   it('renders with a suggested mapping provided as an inline field', async function () {
@@ -123,7 +123,7 @@ describe('IntegrationExternalMappingForm', function () {
         {...baseProps}
       />
     );
-    expect(await screen.findByText('Select Sentry Team')).toBeInTheDocument();
+    expect(await screen.findByText('Select Sentinel Team')).toBeInTheDocument();
     expect(
       screen.queryByDisplayValue(MOCK_TEAM_MAPPING.externalName)
     ).not.toBeInTheDocument();
@@ -140,7 +140,7 @@ describe('IntegrationExternalMappingForm', function () {
     );
     expect(baseProps.getBaseFormEndpoint).not.toHaveBeenCalled();
     expect(postResponse).not.toHaveBeenCalled();
-    await userEvent.type(screen.getByText('Select Sentry User'), 'option2');
+    await userEvent.type(screen.getByText('Select Sentinel User'), 'option2');
     await userEvent.click(screen.getAllByText('option2')[1]);
     await userEvent.click(screen.getByTestId('form-submit'));
 

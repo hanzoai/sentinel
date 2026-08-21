@@ -25,7 +25,7 @@ class BitbucketDescriptorEndpoint(Endpoint):
                 "key": BITBUCKET_KEY,
                 "name": "Sentry for Bitbucket",
                 "description": "A Sentry integration",
-                "vendor": {"name": "Sentry.io", "url": "https://sentry.io/"},
+                "vendor": {"name": "Hanzo AI", "url": "https://hanzo.ai"},
                 "baseUrl": absolute_uri(),
                 "authentication": {"type": "JWT"},
                 "lifecycle": {

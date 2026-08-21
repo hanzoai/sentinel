@@ -14,9 +14,17 @@
     //
     // [0]: https://babeljs.io/docs/en/babel-preset-typescript
     // [1]: https://node.green
-    "module": "node16",
+    //
+    // `moduleResolution` must describe webpack, which is what actually resolves
+    // these files (see `resolve.alias` in webpack.config.ts). node16 does not:
+    // it splits resolution into CJS and ESM modes, and every `import()` in a
+    // .tsx file is graded in ESM mode, where a bare directory and a missing
+    // file extension are both errors. The whole route table and every lazy
+    // modal is written that way, so node16 reports ~330 phantom "cannot find
+    // module 'sentry/...'" on files that are sitting right there.
+    "module": "commonjs",
     "target": "ES2022",
-    "moduleResolution": "node16",
+    "moduleResolution": "node",
 
     // We add esnext to lib to pull in types for all newer ECMAScript features
     "lib": ["esnext", "dom"],

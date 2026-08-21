@@ -1,7 +1,6 @@
 import {css} from '@emotion/react';
 import styled from '@emotion/styled';
 
-import sentryPattern from 'sentry-images/pattern/sentry-pattern.png';
 
 import {Alert} from 'sentry/components/alert';
 import ApiForm from 'sentry/components/forms/apiForm';
@@ -96,7 +95,7 @@ export default class InstallWizard extends DeprecatedAsyncView<
   }
 
   getTitle() {
-    return t('Setup Sentry');
+    return t('Setup Sentinel');
   }
 
   render() {
@@ -107,7 +106,7 @@ export default class InstallWizard extends DeprecatedAsyncView<
           <Pattern />
           <SetupWizard>
             <Heading>
-              <span>{t('Welcome to Sentry')}</span>
+              <span>{t('Welcome to Sentinel')}</span>
               <Version>{version.current}</Version>
             </Heading>
             {this.state.loading
@@ -125,7 +124,7 @@ export default class InstallWizard extends DeprecatedAsyncView<
     return (
       <Alert type="error" showIcon>
         {t(
-          'We were unable to load the required configuration from the Sentry server. Please take a look at the service logs.'
+          'We were unable to load the required configuration from the Sentinel server. Please take a look at the service logs.'
         )}
       </Alert>
     );
@@ -175,13 +174,6 @@ const Pattern = styled('div')`
     background-repeat: repeat-y;
   }
 
-  &::after {
-    ${fixedStyle}
-    content: '';
-    background: url(${sentryPattern});
-    background-size: 400px;
-    opacity: 0.8;
-  }
 `;
 
 const Heading = styled('h1')`

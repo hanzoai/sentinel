@@ -196,9 +196,9 @@ class ProjectKeys extends DeprecatedAsyncView<Props, State> {
 
         <TextBlock>
           {tct(
-            `To send data to Sentry you will need to configure an SDK with a client key
+            `To send data to Sentinel you will need to configure an SDK with a client key
           (usually referred to as the [code:SENTRY_DSN] value). For more
-          information on integrating Sentry with your application take a look at our
+          information on integrating Sentinel with your application take a look at our
           [link:documentation].`,
             {
               link: (

@@ -345,7 +345,7 @@ class IntegrationDetailedView extends AbstractIntegrationDetailedView<
             type: 'boolean',
             label: t('Enable Comments on Suspect Pull Requests'),
             help: t(
-              'Allow Sentry to comment on recent pull requests suspected of causing issues.'
+              'Allow Sentinel to comment on recent pull requests suspected of causing issues.'
             ),
             disabled: !hasIntegration,
             disabledReason: t(
@@ -357,7 +357,7 @@ class IntegrationDetailedView extends AbstractIntegrationDetailedView<
             type: 'boolean',
             label: t('Enable Comments on Open Pull Requests'),
             help: t(
-              'Allow Sentry to comment on open pull requests to show recent error issues for the code being changed.'
+              'Allow Sentinel to comment on open pull requests to show recent error issues for the code being changed.'
             ),
             disabled: !hasIntegration,
             disabledReason: t(
@@ -370,7 +370,7 @@ class IntegrationDetailedView extends AbstractIntegrationDetailedView<
             type: 'boolean',
             label: t('Enable Missing Member Detection'),
             help: t(
-              'Allow Sentry to detect users committing to your GitHub repositories that are not part of your Sentry organization..'
+              'Allow Sentinel to detect users committing to your GitHub repositories that are not part of your Sentinel organization..'
             ),
             disabled: !hasIntegration,
             disabledReason: t(

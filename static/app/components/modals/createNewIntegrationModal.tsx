@@ -64,7 +64,7 @@ function CreateNewIntegrationModal({
       </RadioChoiceHeader>,
       <RadioChoiceDescription key="description-public">
         {tct(
-          'A public integration will be available for all Sentry users for installation. See more info on [docsLink].',
+          'A public integration will be available for all Sentinel users for installation. See more info on [docsLink].',
           {
             docsLink: (
               <ExternalLink
@@ -89,11 +89,11 @@ function CreateNewIntegrationModal({
     choices.push([
       'sentry-fx',
       <RadioChoiceHeader data-test-id="sentry-function" key="header-sentryfx">
-        {t('Sentry Function')}
+        {t('Sentinel Function')}
       </RadioChoiceHeader>,
       <RadioChoiceDescription key="description-sentry-function">
         {t(
-          'A Sentry Function is a new type of integration leveraging the power of cloud functions.'
+          'A Sentinel Function is a new type of integration leveraging the power of cloud functions.'
         )}
       </RadioChoiceDescription>,
     ]);

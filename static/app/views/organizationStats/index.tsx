@@ -378,7 +378,7 @@ export class OrganizationStats extends Component<OrganizationStatsProps> {
                 <Layout.Title>{t('Organization Usage Stats')}</Layout.Title>
                 <HeadingSubtitle>
                   {tct(
-                    'A view of the usage data that Sentry has received across your entire organization. [link: Read the docs].',
+                    'A view of the usage data that Sentinel has received across your entire organization. [link: Read the docs].',
                     {
                       link: <ExternalLink href="https://docs.sentry.io/product/stats/" />,
                     }

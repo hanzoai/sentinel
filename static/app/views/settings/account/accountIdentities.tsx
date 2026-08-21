@@ -183,7 +183,7 @@ function AccountIdentities() {
           {!appIdentities.length ? (
             <EmptyMessage>
               {t(
-                'There are no application identities associated with your Sentry account'
+                'There are no application identities associated with your Sentinel account'
               )}
             </EmptyMessage>
           ) : (
@@ -204,7 +204,7 @@ function AccountIdentities() {
           {!orgIdentities.length ? (
             <EmptyMessage>
               {t(
-                'There are no organization identities associated with your Sentry account'
+                'There are no organization identities associated with your Sentinel account'
               )}
             </EmptyMessage>
           ) : (
