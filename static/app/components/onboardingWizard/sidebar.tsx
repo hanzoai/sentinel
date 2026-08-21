@@ -59,7 +59,7 @@ Heading.defaultProps = {
   transition: testableTransition(),
 };
 
-const completeNowText = isDemoWalkthrough() ? t('Sentry Basics') : t('Next Steps');
+const completeNowText = isDemoWalkthrough() ? t('Sentinel Basics') : t('Next Steps');
 
 const customizedTasksHeading = <Heading key="customized">{t('The Basics')}</Heading>;
 const completeNowHeading = <Heading key="now">{completeNowText}</Heading>;

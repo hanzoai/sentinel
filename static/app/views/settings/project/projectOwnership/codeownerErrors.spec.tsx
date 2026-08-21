@@ -30,7 +30,7 @@ describe('CodeownerErrors', () => {
 
     await userEvent.click(
       screen.getByText(
-        'There were 3 ownership issues within Sentry on the latest sync with the CODEOWNERS file'
+        'There were 3 ownership issues within Sentinel on the latest sync with the CODEOWNERS file'
       )
     );
     expect(
@@ -59,7 +59,7 @@ describe('CodeownerErrors', () => {
 
     expect(
       screen.getByText(
-        'There were 3 ownership issues within Sentry on the latest sync with the CODEOWNERS file'
+        'There were 3 ownership issues within Sentinel on the latest sync with the CODEOWNERS file'
       )
     ).toBeInTheDocument();
   });

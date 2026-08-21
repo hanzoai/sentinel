@@ -1,7 +1,7 @@
 # NOTE: Do not rely on `make` commands here as this action is used across different repos
 # where the Makefile will not be available
-name: 'Sentry Setup'
-description: 'Sets up a Sentry test environment'
+name: 'Sentinel Setup'
+description: 'Sets up a Sentinel test environment'
 inputs:
   workdir:
     description: 'Directory where the sentry source is located'

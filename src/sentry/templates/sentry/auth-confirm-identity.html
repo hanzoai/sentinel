@@ -29,14 +29,14 @@
             <span class="icon-arrow-left"></span>
             <span class="avatar">{% avatar existing_user %}</span>
           </div>
-          <div><strong>Sentry</strong></div>
+          <div><strong>Sentinel</strong></div>
           <div class="email-truncate">{{ existing_user.email }}</div>
         </div>
       </div>
     </div>
 
     <div class="sso-link">
-      <p>We found an existing Sentry account for {{ identity.email }}. Please confirm your credentials:</p>
+      <p>We found an existing Sentinel account for {{ identity.email }}. Please confirm your credentials:</p>
     </div>
 
     <form class="form-stacked" action="" method="post" autocomplete="off">
@@ -80,7 +80,7 @@
       <div class="align-center">
         <p>You have logged into {{ provider }} as {{ identity.email }}.</p>
 
-        <p>We'll create a new Sentry account for you with this email address.</p>
+        <p>We'll create a new Sentinel account for you with this email address.</p>
 
         <p><button class="btn btn-primary" type="submit" name="op" value="newuser">Continue</button></p>
       </div>

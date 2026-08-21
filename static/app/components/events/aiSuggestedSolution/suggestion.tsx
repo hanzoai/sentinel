@@ -72,7 +72,7 @@ function ErrorDescription({
         icon={<IconFlag size="xl" />}
         title={t('We need your consent')}
         description={t(
-          'By using this feature, you agree that OpenAI is a subprocessor and may process the data that you’ve chosen to submit. Sentry makes no guarantees as to the accuracy of the feature’s AI-generated recommendations.'
+          'By using this feature, you agree that OpenAI is a subprocessor and may process the data that you’ve chosen to submit. Sentinel makes no guarantees as to the accuracy of the feature’s AI-generated recommendations.'
         )}
         action={
           <ButtonBar gap={2}>

@@ -70,7 +70,7 @@ describe('DemoEndModal', function () {
       ))
     );
 
-    const signUpButton = screen.getByRole('button', {name: 'Sign up for Sentry'});
+    const signUpButton = screen.getByRole('button', {name: 'Sign up for Sentinel'});
     expect(signUpButton).toBeInTheDocument();
     expect(signUpButton).toHaveAttribute('href', 'https://sentry.io/signup/');
   });

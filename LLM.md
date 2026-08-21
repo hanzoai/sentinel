@@ -1,11 +1,11 @@
-# Hanzo Sentry
+# Sentinel
 
 Error tracking and performance monitoring for the Hanzo ecosystem.
 
 **Upstream**: [getsentry/sentry](https://github.com/getsentry/sentry) under FSL-1.0-Apache-2.0 (Functional Source License, with Apache-2.0 as the Change License). LICENSE.md retained as-is from upstream.
 
 **Repo**: `github.com/hanzoai/sentry`
-**Branded as**: Hanzo Sentry / `sentry.hanzo.ai`
+**Branded as**: Sentinel / `sentry.hanzo.ai`
 
 ## Integration
 

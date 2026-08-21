@@ -109,7 +109,7 @@ describe('AccountIdentities', function () {
 
     expect(
       await screen.findByText(
-        'There are no organization identities associated with your Sentry account'
+        'There are no organization identities associated with your Sentinel account'
       )
     ).toBeInTheDocument();
 

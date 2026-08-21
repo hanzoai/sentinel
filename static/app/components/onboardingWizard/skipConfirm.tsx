@@ -53,8 +53,8 @@ export default SkipConfirm;
 const SkipHelp = HookOrDefault({
   hookName: 'onboarding-wizard:skip-help',
   defaultComponent: () => (
-    <Button priority="primary" size="xs" to="https://forum.sentry.io/" external>
-      {t('Community Forum')}
+    <Button priority="primary" size="xs" to="https://hanzo.ai/support" external>
+      {t('Support')}
     </Button>
   ),
 });

@@ -1,16 +1,16 @@
-You have a new account on Sentry!
+You have a new account on Sentinel!
 
 Username: {{ username }}
 Password: {{ password }}
 
-Sign in to Sentry by visiting the following url:
+Sign in to Sentinel by visiting the following url:
 
     {{ url }}
 
 {% spaceless %}
 {% if project %}
 A project has been automatically created for you. Configure your client
-with the following value for the Sentry DSN to start sending events:
+with the following value for the Sentinel DSN to start sending events:
 
     {{ dsn }}
 {% endif %}

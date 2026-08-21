@@ -99,7 +99,7 @@ class ProjectUserFeedbackSettings extends DeprecatedAsyncView<Props> {
           {t(
             `When configured, your users will be presented with a dialog prompting
             them for additional information. That information will get attached to
-            the issue in Sentry.`
+            the issue in Sentinel.`
           )}
         </TextBlock>
 

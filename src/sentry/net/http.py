@@ -185,7 +185,7 @@ class TimeoutAdapter(HTTPAdapter):
         return HTTPAdapter.send(self, *args, **kwargs)
 
 
-USER_AGENT = f"sentry/{SENTRY_VERSION} (https://sentry.io)"
+USER_AGENT = f"sentinel/{SENTRY_VERSION} (https://hanzo.ai)"
 
 
 class Session(_Session):

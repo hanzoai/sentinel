@@ -210,7 +210,7 @@
     <tr class="mobile-full-width">
       <td width="125px">
         <h1>
-          <a href="{% absolute_uri %}"><img src="{% absolute_asset_url 'sentry' 'images/email/sentry_logo_full.png' %}" width="125px" height="29px" alt="Sentry"></a>
+          <a href="{% absolute_uri %}"><img src="{% absolute_asset_url 'sentry' 'images/email/sentry_logo_full.png' %}" width="125px" height="29px" alt="Sentinel"></a>
         </h1>
       </td>
       <td class="align-right">
@@ -308,7 +308,7 @@
     {% else %}
       <td class="project-breakdown-graph-cell {% if has_replay_graph and trends.total_replay_count > 0 %}transactions-empty-below{% elif has_replay_graph %}transactions-empty-below some-empty-below{% else %}transactions-empty{% endif %}">
         <div style="border: 1px solid #c4c4cc; border-radius: 4px; padding: 24px 16px; text-align: center; height: 170px;">
-          <img src="{% absolute_asset_url 'sentry' 'images/email/icon-circle-lightning.png' %}" width="32px" height="32px" alt="Sentry">
+          <img src="{% absolute_asset_url 'sentry' 'images/email/icon-circle-lightning.png' %}" width="32px" height="32px" alt="Sentinel">
           <h1 style="font-weight: bold; font-size: 17px;">Something slow?</h1>
           <p style="font-size: 11px;">Trace those 10-second page loads to poor-performing API calls.</p>
           {% url 'sentry-organization-performance' organization.slug as performance_landing %}
@@ -360,7 +360,7 @@
       <td class="project-breakdown-graph-cell {% if trends.total_transaction_count > 0 %}replays-empty some-empty-below{% else %}replays-empty{% endif %}">
         <div style="border: 1px solid #c4c4cc; border-radius: 4px; padding: 24px 16px; text-align: center; height: 170px;">
           <img src="{% absolute_asset_url 'sentry' 'images/email/icon-circle-play.png' %}" width="32px" height="32px"
-            alt="Sentry">
+            alt="Sentinel">
           <h1 style="font-weight: bold; font-size: 17px;">Tricky bug?</h1>
           <p style="font-size: 11px;">Rewind and replay every step of a user’s journey before and after they encounter an issue.</p>
           {% url 'sentry-organization-replays' organization.slug as replay_landing %}

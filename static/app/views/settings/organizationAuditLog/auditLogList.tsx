@@ -49,7 +49,7 @@ const addUsernameDisplay = (logEntryUser: User | undefined) => {
     return (
       <Name data-test-id="actor-name">
         {logEntryUser.name}
-        <StaffTag>{t('Sentry Staff')}</StaffTag>
+        <StaffTag>{t('Sentinel Staff')}</StaffTag>
       </Name>
     );
   }

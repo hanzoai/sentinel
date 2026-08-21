@@ -31,7 +31,7 @@ export default function DemoEndingModal({tour, closeModal, CloseButton, orgSlug}
     case 'issues':
       cardTitle = t('Issues Tour');
       body = t(
-        'Thank you for completing the Issues tour. Learn about other Sentry features by starting another tour.'
+        'Thank you for completing the Issues tour. Learn about other Sentinel features by starting another tour.'
       );
       guides = ['issues_v3', 'issue_stream_v3'];
       path = `/organizations/${orgSlug}/issues/`;
@@ -39,7 +39,7 @@ export default function DemoEndingModal({tour, closeModal, CloseButton, orgSlug}
     case 'performance':
       cardTitle = t('Performance Tour');
       body = t(
-        'Thank you for completing the Performance tour. Learn about other Sentry features by starting another tour.'
+        'Thank you for completing the Performance tour. Learn about other Sentinel features by starting another tour.'
       );
       guides = ['performance', 'transaction_summary', 'transaction_details_v2'];
       path = `/organizations/${orgSlug}/performance/`;
@@ -47,7 +47,7 @@ export default function DemoEndingModal({tour, closeModal, CloseButton, orgSlug}
     case 'releases':
       cardTitle = t('Releases Tour');
       body = t(
-        'Thank you for completing the Releases tour. Learn about other Sentry features by starting another tour.'
+        'Thank you for completing the Releases tour. Learn about other Sentinel features by starting another tour.'
       );
       guides = ['releases_v2', 'react-native-release', 'release-details_v2'];
       path = `/organizations/${orgSlug}/releases/`;
@@ -55,7 +55,7 @@ export default function DemoEndingModal({tour, closeModal, CloseButton, orgSlug}
     case 'tabs':
       cardTitle = t('Check out the different tabs');
       body = t(
-        'Thank you for checking out the different tabs. Learn about other Sentry features by starting another tour.'
+        'Thank you for checking out the different tabs. Learn about other Sentinel features by starting another tour.'
       );
       guides = ['sidebar_v2'];
       path = `/organizations/${orgSlug}/projects/`;
@@ -64,7 +64,7 @@ export default function DemoEndingModal({tour, closeModal, CloseButton, orgSlug}
   }
 
   const sandboxData = window.SandboxData;
-  const url = sandboxData?.cta?.url || 'https://sentry.io/signup/';
+  const url = sandboxData?.cta?.url || 'https://hanzo.ai/signup';
 
   const navigation = useCallback(() => {
     navigate(path);
@@ -128,7 +128,7 @@ export default function DemoEndingModal({tour, closeModal, CloseButton, orgSlug}
             });
           }}
         >
-          {sandboxData?.cta?.title || t('Sign up for Sentry')}
+          {sandboxData?.cta?.title || t('Sign up for Sentinel')}
         </SignUpButton>
         <ButtonBar>
           <Button onClick={handleMoreTours}>{t('More Tours')} </Button>

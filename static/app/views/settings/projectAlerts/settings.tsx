@@ -146,7 +146,7 @@ function ProjectAlertSettings({canEditRule, params}: ProjectAlertSettingsProps) 
               renderHeader={() => (
                 <PanelAlert type="info">
                   {t(
-                    'Sentry will automatically digest alerts sent by some services to avoid flooding your inbox with individual issue notifications. To control how frequently notifications are delivered, use the sliders below.'
+                    'Sentinel will automatically digest alerts sent by some services to avoid flooding your inbox with individual issue notifications. To control how frequently notifications are delivered, use the sliders below.'
                   )}
                 </PanelAlert>
               )}

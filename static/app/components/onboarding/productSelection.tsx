@@ -40,7 +40,7 @@ function getDisabledProducts(organization: Organization): DisabledProducts {
   const hasPerformance = organization.features.includes('performance-view');
   const hasProfiling = organization.features.includes('profiling-view');
 
-  const reason = t('This feature is not enabled on your Sentry installation.');
+  const reason = t('This feature is not enabled on your Sentinel installation.');
   const createClickHandler = (feature: string, featureName: string) => () => {
     openModal(deps => (
       <FeatureDisabledModal {...deps} features={[feature]} featureName={featureName} />
@@ -420,7 +420,7 @@ export function ProductSelection({
       </Products>
       {showPackageManagerInfo && lazyLoader && (
         <AlternativeInstallationAlert type="info" showIcon>
-          {tct('Prefer to set up Sentry using [npm:npm] or [yarn:yarn]? [goHere].', {
+          {tct('Prefer to set up Sentinel using [npm:npm] or [yarn:yarn]? [goHere].', {
             npm: <strong />,
             yarn: <strong />,
             goHere: (

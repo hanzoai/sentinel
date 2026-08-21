@@ -22,7 +22,7 @@ import GroupDetails from 'sentry/views/issueDetails/groupDetails';
 jest.unmock('sentry/utils/recreateRoute');
 
 const SAMPLE_EVENT_ALERT_TEXT =
-  'You are viewing a sample error. Configure Sentry to start viewing real errors.';
+  'You are viewing a sample error. Configure Sentinel to start viewing real errors.';
 
 describe('groupDetails', () => {
   const group = GroupFixture({issueCategory: IssueCategory.ERROR});

@@ -50,7 +50,7 @@ export default function DemoHeader() {
         const url =
           sandboxData?.cta?.url ||
           urlAttachQueryParams(
-            'https://sentry.io/signup/',
+            'https://hanzo.ai/signup',
             extraQueryParameterWithEmail()
           );
 

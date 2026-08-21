@@ -1,4 +1,4 @@
-name: 'Sentry CodeQL Config'
+name: 'Sentinel CodeQL Config'
 
 paths-ignore:
   - '**/tests/**'

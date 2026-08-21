@@ -46,7 +46,7 @@ export default class AdminEnvironment extends DeprecatedAsyncView<{}, State> {
                   size="xs"
                   external
                 >
-                  {t('Upgrade to Sentry %s', version.latest)}
+                  {t('Upgrade to Sentinel %s', version.latest)}
                 </Button>
               )}
             </VersionLabel>
@@ -72,7 +72,7 @@ export default class AdminEnvironment extends DeprecatedAsyncView<{}, State> {
           </dl>
         ) : (
           <p>
-            {t('Environment not found (are you using the builtin Sentry webserver?).')}
+            {t('Environment not found (are you using the builtin Sentinel webserver?).')}
           </p>
         )}
 

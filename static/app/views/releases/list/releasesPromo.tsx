@@ -46,7 +46,7 @@ export const RELEASES_TOUR_STEPS: TourStep[] = [
     body: (
       <TourText>
         {t(
-          'Sentry suggests which commit caused an issue and who is likely responsible so you can triage.'
+          'Sentinel suggests which commit caused an issue and who is likely responsible so you can triage.'
         )}
       </TourText>
     ),

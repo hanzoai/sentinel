@@ -96,7 +96,7 @@ class SuggestProjectModal extends Component<Props, State> {
           }
         >
           <p>
-            {t('Let the right folks know about Sentry Mobile Application Monitoring.')}
+            {t('Let the right folks know about Sentinel Mobile Application Monitoring.')}
           </p>
           <EmailField
             required
@@ -127,7 +127,7 @@ class SuggestProjectModal extends Component<Props, State> {
           <ModalContainer>
             <SmallP>
               {t(
-                "Sentry for Mobile shows a holistic overview of your application's health in real time. So you can correlate errors with releases, tags, and devices to solve problems quickly, decrease churn, and improve user retention."
+                "Sentinel for Mobile shows a holistic overview of your application's health in real time. So you can correlate errors with releases, tags, and devices to solve problems quickly, decrease churn, and improve user retention."
               )}
             </SmallP>
 
@@ -191,7 +191,7 @@ class SuggestProjectModal extends Component<Props, State> {
   render() {
     const {Header} = this.props;
     const {askTeammate} = this.state;
-    const header = askTeammate ? t('Tell a Teammate') : t('Try Sentry for Mobile');
+    const header = askTeammate ? t('Tell a Teammate') : t('Try Sentinel for Mobile');
     return (
       <Fragment>
         <Header>

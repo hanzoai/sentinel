@@ -95,7 +95,7 @@ function RouteError({error, disableLogSentry, disableReport, project}: Props) {
       <p>
         {t(`
           It looks like you've hit an issue in our client application. Don't worry though!
-          We use Sentry to monitor Sentry and it's likely we're already looking into this!
+          We use Sentinel to monitor Sentinel and it's likely we're already looking into this!
           `)}
       </p>
       <p>{t("If you're daring, you may want to try the following:")}</p>

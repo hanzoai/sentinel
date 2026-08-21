@@ -61,7 +61,7 @@ function FeatureDisabled({
   featureName,
   alert,
   hideHelpToggle,
-  message = t('This feature is not enabled on your Sentry installation.'),
+  message = t('This feature is not enabled on your Sentinel installation.'),
 }: Props) {
   const [showHelp, setShowHelp] = useState(false);
 

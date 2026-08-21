@@ -113,7 +113,7 @@ export const NOTIFICATION_SETTING_FIELDS: Record<string, Field> = {
       [true as any, t('On')],
       [false as any, t('Off')],
     ],
-    help: t('Notifications about your own actions on Sentry.'),
+    help: t('Notifications about your own actions on Sentinel.'),
   },
   selfAssignOnResolve: {
     name: 'selfAssignOnResolve',
