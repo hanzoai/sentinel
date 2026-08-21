@@ -18,10 +18,10 @@ function ProgressHeader({allTasks, completedTasks}: Props) {
   let title: string, description: string;
   if (isDemoWalkthrough()) {
     title = t('Guided Tours');
-    description = t('Take a guided tour to see what Sentry can do for you');
+    description = t('Take a guided tour to see what Sentinel can do for you');
   } else {
     title = t('Quick Start');
-    description = t('Walk through this guide to get the most out of Sentry right away.');
+    description = t('Walk through this guide to get the most out of Sentinel right away.');
   }
 
   const filteredTasks = allTasks.filter(task => !task.renderCard);

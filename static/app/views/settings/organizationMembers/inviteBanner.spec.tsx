@@ -53,7 +53,7 @@ describe('inviteBanner', function () {
 
     expect(
       await screen.findByRole('heading', {
-        name: 'Bring your full GitHub team on board in Sentry',
+        name: 'Bring your full GitHub team on board in Sentinel',
       })
     ).toBeInTheDocument();
     expect(screen.queryAllByTestId('invite-missing-member')).toHaveLength(5);
@@ -192,7 +192,7 @@ describe('inviteBanner', function () {
 
     expect(
       await screen.findByRole('heading', {
-        name: 'Bring your full GitHub team on board in Sentry',
+        name: 'Bring your full GitHub team on board in Sentinel',
       })
     ).toBeInTheDocument();
   });
@@ -277,7 +277,7 @@ describe('inviteBanner', function () {
 
     expect(
       await screen.findByRole('heading', {
-        name: 'Bring your full GitHub team on board in Sentry',
+        name: 'Bring your full GitHub team on board in Sentinel',
       })
     ).toBeInTheDocument();
     expect(screen.queryAllByTestId('invite-missing-member')).toHaveLength(5);

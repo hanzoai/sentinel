@@ -122,7 +122,7 @@ class AcceptOrganizationInvite extends DeprecatedAsyncView<Props, State> {
           <p data-test-id="action-info-general">
             {t(
               `To continue, you must either create a new account, or login to an
-              existing Sentry account.`
+              existing Sentinel account.`
             )}
           </p>
         )}
@@ -292,7 +292,7 @@ class AcceptOrganizationInvite extends DeprecatedAsyncView<Props, State> {
           </Alert>
         )}
         <InviteDescription data-test-id="accept-invite">
-          {tct('[orgSlug] is using Sentry to track and debug errors.', {
+          {tct('[orgSlug] is using Sentinel to track and debug errors.', {
             orgSlug: <strong>{inviteDetails.orgSlug}</strong>,
           })}
         </InviteDescription>

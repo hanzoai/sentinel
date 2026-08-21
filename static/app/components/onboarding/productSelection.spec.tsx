@@ -40,7 +40,7 @@ describe('Onboarding Product Selection', function () {
         textWithMarkupMatcher(/In this quick guide you’ll use npm or yarn/)
       )
     ).toBeInTheDocument();
-    expect(screen.queryByText('Prefer to set up Sentry using')).not.toBeInTheDocument();
+    expect(screen.queryByText('Prefer to set up Sentinel using')).not.toBeInTheDocument();
 
     // Error monitoring shall be checked and disabled by default
     expect(screen.getByRole('checkbox', {name: 'Error Monitoring'})).toBeChecked();
@@ -131,7 +131,7 @@ describe('Onboarding Product Selection', function () {
     ).toBeInTheDocument();
     expect(
       screen.getByText(
-        textWithMarkupMatcher(/Prefer to set up Sentry using npm or yarn\?/)
+        textWithMarkupMatcher(/Prefer to set up Sentinel using npm or yarn\?/)
       )
     ).toBeInTheDocument();
 

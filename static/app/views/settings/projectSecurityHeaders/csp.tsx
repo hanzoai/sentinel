@@ -117,7 +117,7 @@ export default function ProjectCspReports() {
             (CSP) is a security standard which helps prevent cross-site scripting (XSS),
             clickjacking and other code injection attacks resulting from execution of
             malicious content in the trusted web page context. It's enforced by browser
-            vendors, and Sentry supports capturing CSP violations using the standard
+            vendors, and Sentinel supports capturing CSP violations using the standard
             reporting hooks.`,
               {
                 link: (
@@ -130,8 +130,8 @@ export default function ProjectCspReports() {
           <p>
             {tct(
               `To configure [csp:CSP] reports
-              in Sentry, you'll need to send a header from your server describing your
-              policy, as well specifying the authenticated Sentry endpoint.`,
+              in Sentinel, you'll need to send a header from your server describing your
+              policy, as well specifying the authenticated Sentinel endpoint.`,
               {
                 csp: <abbr title="Content Security Policy" />,
               }

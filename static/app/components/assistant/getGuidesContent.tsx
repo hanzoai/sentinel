@@ -48,7 +48,7 @@ export default function getGuidesContent(orgSlug: string | null): GuidesContent 
           title: t('Retrace Your Steps'),
           target: 'breadcrumbs',
           description: t(
-            `Not sure how you got here? Sentry automatically captures breadcrumbs for events in web
+            `Not sure how you got here? Sentinel automatically captures breadcrumbs for events in web
                 frameworks to lead you straight to your error.`
           ),
         },
@@ -62,7 +62,7 @@ export default function getGuidesContent(orgSlug: string | null): GuidesContent 
           title: t('Issues'),
           target: 'issue_stream',
           description: tct(
-            `Sentry automatically groups similar events together into an issue. Similarity is
+            `Sentinel automatically groups similar events together into an issue. Similarity is
             determined by stack trace and other factors. [link:Learn more].`,
             {
               link: (
@@ -332,7 +332,7 @@ function getDemoModeGuides(): GuidesContent {
           title: t('Issues'),
           target: 'issues',
           description: t(
-            `Here's a list of what's broken and slow. Sentry automatically groups similar events together into an issue.`
+            `Here's a list of what's broken and slow. Sentinel automatically groups similar events together into an issue.`
           ),
         },
         {
@@ -367,7 +367,7 @@ function getDemoModeGuides(): GuidesContent {
           title: t('Issues'),
           target: 'issue_stream',
           description: t(
-            `Sentry automatically groups similar events together into an issue. Similarity is
+            `Sentinel automatically groups similar events together into an issue. Similarity is
             determined by stack trace and other factors. Click on an issue to learn more.`
           ),
         },
@@ -396,7 +396,7 @@ function getDemoModeGuides(): GuidesContent {
           title: t('Retrace your steps'),
           target: 'breadcrumbs',
           description: t(
-            `Sentry automatically captures breadcrumbs for events so you can see the sequence of events leading up to the error.`
+            `Sentinel automatically captures breadcrumbs for events so you can see the sequence of events leading up to the error.`
           ),
           nextText: t('Got it'),
         },

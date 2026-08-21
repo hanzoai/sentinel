@@ -992,10 +992,10 @@ function buildRoutes() {
               )
           )}
         />
-        <Route path="sentry-functions/" name={t('Sentry Functions')}>
+        <Route path="sentry-functions/" name={t('Sentinel Functions')}>
           <Route
             path="new/"
-            name={t('Create Sentry Function')}
+            name={t('Create Sentinel Function')}
             component={make(
               () =>
                 import(
@@ -1005,7 +1005,7 @@ function buildRoutes() {
           />
           <Route
             path=":functionSlug/"
-            name={t('Edit Sentry Function')}
+            name={t('Edit Sentinel Function')}
             component={make(
               () =>
                 import(

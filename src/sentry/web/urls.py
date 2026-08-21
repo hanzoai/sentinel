@@ -409,12 +409,12 @@ urlpatterns += [
     # Legacy Redirects
     re_path(
         r"^docs/?$",
-        RedirectView.as_view(url="https://docs.sentry.io/", permanent=False),
+        RedirectView.as_view(url="https://docs.hanzo.ai/", permanent=False),
         name="sentry-docs-redirect",
     ),
     re_path(
         r"^docs/api/?$",
-        RedirectView.as_view(url="https://docs.sentry.io/api/", permanent=False),
+        RedirectView.as_view(url="https://docs.hanzo.ai/", permanent=False),
         name="sentry-api-docs-redirect",
     ),
     re_path(

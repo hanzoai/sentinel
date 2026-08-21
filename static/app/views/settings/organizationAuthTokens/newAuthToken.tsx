@@ -86,7 +86,7 @@ function AuthTokenCreateForm({
       const message =
         code === 'missing_system_url_prefix'
           ? t(
-              'You have to configure `system.url-prefix` in your Sentry instance in order to generate tokens.'
+              'You have to configure `system.url-prefix` in your Sentinel instance in order to generate tokens.'
             )
           : t('Failed to create a new auth token.');
       handleXhrErrorResponse(message, error);
@@ -146,7 +146,7 @@ export function OrganizationAuthTokensNewAuthToken({
 
       <TextBlock>
         {t(
-          'Organization Auth Tokens can be used in many places to interact with Sentry programatically. For example, they can be used for sentry-cli, bundler plugins or similar uses cases.'
+          'Organization Auth Tokens can be used in many places to interact with Sentinel programatically. For example, they can be used for sentry-cli, bundler plugins or similar uses cases.'
         )}
       </TextBlock>
       <TextBlock>

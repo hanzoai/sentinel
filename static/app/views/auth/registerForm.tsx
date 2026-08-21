@@ -35,7 +35,7 @@ function RegisterForm({authConfig}: Props) {
         setError(response.responseJSON.detail);
       }}
       extraButton={
-        <PrivacyPolicyLink href="https://sentry.io/privacy/">
+        <PrivacyPolicyLink href="https://hanzo.ai/privacy">
           {t('Privacy Policy')}
         </PrivacyPolicyLink>
       }
@@ -78,7 +78,7 @@ function RegisterForm({authConfig}: Props) {
            updates focus on relevant information, and we'll never sell your data
            to third parties. See our [link] for more details.`,
             {
-              link: <a href="https://sentry.io/privacy/">Privacy Policy</a>,
+              link: <a href="https://hanzo.ai/privacy">Privacy Policy</a>,
             }
           )}
           stacked

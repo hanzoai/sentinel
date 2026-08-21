@@ -19,7 +19,7 @@ function StatsHeader({organization, activeTab}: Props) {
           <PageHeadingQuestionTooltip
             docsUrl="https://docs.sentry.io/product/stats/"
             title={t(
-              'A view of the usage data that Sentry has received across your entire organization.'
+              'A view of the usage data that Sentinel has received across your entire organization.'
             )}
           />
         </Layout.Title>

@@ -88,7 +88,7 @@ export const getJSMetricsOnboarding = ({
         },
         {
           description: t(
-            'With a bit of delay you can see the data appear in the Sentry UI.'
+            'With a bit of delay you can see the data appear in the Sentinel UI.'
           ),
         },
         {
@@ -180,7 +180,7 @@ export const getJSServerMetricsOnboarding = (): OnboardingConfig => ({
         },
         {
           description: t(
-            'With a bit of delay you can see the data appear in the Sentry UI.'
+            'With a bit of delay you can see the data appear in the Sentinel UI.'
           ),
         },
         {
@@ -284,7 +284,7 @@ export const getPythonMetricsOnboarding = ({
         },
         {
           description: t(
-            'With a bit of delay you can see the data appear in the Sentry UI.'
+            'With a bit of delay you can see the data appear in the Sentinel UI.'
           ),
         },
         {
@@ -373,7 +373,7 @@ export const getDotnetMetricsOnboarding = ({
         },
         {
           description: t(
-            'With a bit of delay you can see the data appear in the Sentry UI.'
+            'With a bit of delay you can see the data appear in the Sentinel UI.'
           ),
         },
         {

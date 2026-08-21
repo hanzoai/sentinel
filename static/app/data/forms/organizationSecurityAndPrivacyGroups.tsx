@@ -74,11 +74,11 @@ const formGroups: JsonFormObject[] = [
         type: 'boolean',
         confirm: {
           false: t(
-            "Are you sure you want to disable sourcecode fetching for JavaScript events? This will affect Sentry's ability to aggregate issues if you're not already uploading sourcemaps as artifacts."
+            "Are you sure you want to disable sourcecode fetching for JavaScript events? This will affect Sentinel's ability to aggregate issues if you're not already uploading sourcemaps as artifacts."
           ),
         },
         label: t('Allow JavaScript Source Fetching'),
-        help: t('Allow Sentry to scrape missing JavaScript source context when possible'),
+        help: t('Allow Sentinel to scrape missing JavaScript source context when possible'),
       },
       {
         name: 'storeCrashReports',

@@ -153,14 +153,14 @@ class TicketRuleModal extends AbstractExternalIssueForm<Props, State> {
         name: 'title',
         label: 'Title',
         type: 'string',
-        default: 'This will be the same as the Sentry Issue.',
+        default: 'This will be the same as the Sentinel Issue.',
         disabled: true,
       } as IssueConfigField,
       {
         name: 'description',
         label: 'Description',
         type: 'string',
-        default: 'This will be generated from the Sentry Issue details.',
+        default: 'This will be generated from the Sentinel Issue details.',
         disabled: true,
       } as IssueConfigField,
     ];
@@ -226,7 +226,7 @@ class TicketRuleModal extends AbstractExternalIssueForm<Props, State> {
     let body: React.ReactNode;
     if (link) {
       body = tct(
-        'When this alert is triggered [ticketType] will be created with the following fields. It will also [linkToDocs:stay in sync] with the new Sentry Issue.',
+        'When this alert is triggered [ticketType] will be created with the following fields. It will also [linkToDocs:stay in sync] with the new Sentinel Issue.',
         {
           linkToDocs: <ExternalLink href={link} />,
           ticketType,

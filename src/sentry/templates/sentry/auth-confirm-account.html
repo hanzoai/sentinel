@@ -28,7 +28,7 @@
           <span class="icon-arrow-left"></span>
           <span class="avatar">{% avatar existing_user %}</span>
         </div>
-        <div><strong>Sentry</strong></div>
+        <div><strong>Sentinel</strong></div>
         <div class="email-truncate">{{ existing_user.email }}</div>
       </div>
     </div>
@@ -36,13 +36,9 @@
 
   <div class="sso-link">
     <p>
-      We found an existing Sentry account for {{ identity.email }}.
+      We found an existing Sentinel account for {{ identity.email }}.
       Please check your inbox for a verification email and follow the link
-      to associate this {{ provider }} account with your Sentry account.
-    </p>
-
-    <p>
-      <a href="https://docs.sentry.io/product/accounts/sso/">Learn more in docs</a>
+      to associate this {{ provider }} account with your Sentinel account.
     </p>
   </div>
 

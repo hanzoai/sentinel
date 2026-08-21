@@ -143,7 +143,7 @@ describe('Custom Repositories', function () {
 
     // Feature disabled warning
     expect(
-      await screen.findByText('This feature is not enabled on your Sentry installation.')
+      await screen.findByText('This feature is not enabled on your Sentinel installation.')
     ).toBeInTheDocument();
 
     // Help content
@@ -190,7 +190,7 @@ describe('Custom Repositories', function () {
 
     // Feature disabled warning
     expect(
-      await screen.findByText('This feature is not enabled on your Sentry installation.')
+      await screen.findByText('This feature is not enabled on your Sentinel installation.')
     ).toBeInTheDocument();
 
     // Help content

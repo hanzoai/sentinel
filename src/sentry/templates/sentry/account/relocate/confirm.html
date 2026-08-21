@@ -8,7 +8,7 @@
 {% block auth_main %}
     <h3>{% trans "Claim Account" %}</h3>
 
-    <p>{% trans "You have been invited to join the following migrated Sentry organizations as" %}</p>
+    <p>{% trans "You have been invited to join the following migrated Sentinel organizations as" %}</p>
     <form method="POST" action="">
         {% csrf_token %}
         {{ form|as_crispy_errors }}

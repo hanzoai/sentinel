@@ -228,9 +228,9 @@ export function FeedbackModal<T extends Data>({
           {isSelfHosted && showSelfHostedMessage && (
             <Alert type="info">
               {tct(
-                "You agree that any feedback you submit is subject to Sentry's [privacyPolicy:Privacy Policy] and Sentry may use such feedback without restriction or obligation.",
+                "You agree that any feedback you submit is subject to Sentinel's [privacyPolicy:Privacy Policy] and Sentinel may use such feedback without restriction or obligation.",
                 {
-                  privacyPolicy: <ExternalLink href="https://sentry.io/privacy/" />,
+                  privacyPolicy: <ExternalLink href="https://hanzo.ai/privacy" />,
                 }
               )}
             </Alert>

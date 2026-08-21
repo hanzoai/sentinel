@@ -1,7 +1,7 @@
 {% extends "sentry/emails/security_base.txt" %}
 
 {% block security_body %}
-An authenticator has been removed from your Sentry account.
+An authenticator has been removed from your Sentinel account.
 {% endblock %}
 
 {% block security_metadata %}
