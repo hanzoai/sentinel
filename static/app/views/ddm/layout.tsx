@@ -90,7 +90,7 @@ export const DDMLayout = memo(() => {
               <h3>{t('Get started with custom metrics')}</h3>
               <p>
                 {t(
-                  "Send your own metrics to Sentry to track your system's behaviour and profit from the same powerful features as you do with errors, like alerting and dashboards."
+                  "Send your own metrics to Sentinel to track your system's behaviour and profit from the same powerful features as you do with errors, like alerting and dashboards."
                 )}
               </p>
               <Button

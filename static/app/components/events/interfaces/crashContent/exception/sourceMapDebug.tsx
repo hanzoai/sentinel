@@ -68,7 +68,7 @@ function getErrorMessage(
         {
           title: t('Event missing Release tag'),
           desc: t(
-            'Integrate Sentry into your release pipeline using a tool like Webpack or the CLI.'
+            'Integrate Sentinel into your release pipeline using a tool like Webpack or the CLI.'
           ),
           docsLink: defaultDocsLink,
         },
@@ -154,7 +154,7 @@ function getErrorMessage(
         {
           title: t("Source Map File doesn't exist"),
           desc: t(
-            "Sentry couldn't fetch the source map file for this event. Read our docs for troubleshooting help."
+            "Sentinel couldn't fetch the source map file for this event. Read our docs for troubleshooting help."
           ),
           docsLink: getTroubleshootingLink(),
         },

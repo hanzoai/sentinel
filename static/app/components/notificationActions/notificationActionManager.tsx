@@ -178,7 +178,7 @@ function NotificationActionManager({
   const getLabel = (serviceType: string) => {
     switch (serviceType) {
       case NotificationActionService.SENTRY_NOTIFICATION:
-        return t('Send a Sentry notification');
+        return t('Send a Sentinel notification');
       case NotificationActionService.OPSGENIE:
         return t('Send an Opsgenie notification');
       default:

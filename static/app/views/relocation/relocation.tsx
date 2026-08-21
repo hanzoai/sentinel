@@ -46,7 +46,7 @@ function getRelocationOnboardingSteps(): StepDescriptor[] {
     },
     {
       id: 'public-key',
-      title: t("Save Sentry's public key to your machine"),
+      title: t("Save Sentinel's public key to your machine"),
       Component: PublicKey,
       cornerVariant: 'top-left',
     },

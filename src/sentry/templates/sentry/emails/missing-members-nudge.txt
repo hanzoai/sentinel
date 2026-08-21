@@ -1,7 +1,7 @@
 
-Bring your full {{ provider }} team on board in Sentry
+Bring your full {{ provider }} team on board in Sentinel
 
-You have developers committing code changes in your GitHub organization. Invite them to Sentry so that they can monitor their error and performance issues.
+You have developers committing code changes in your GitHub organization. Invite them to Sentinel so that they can monitor their error and performance issues.
 
 Most Active Contributors
 

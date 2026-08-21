@@ -7,7 +7,7 @@ function routeTitleGen(
   const tmplBase = `${routeName} - ${orgSlug}`;
   const tmpl = projectSlug ? `${tmplBase} - ${projectSlug}` : tmplBase;
 
-  return withSentry ? `${tmpl} - Sentry` : tmpl;
+  return withSentry ? `${tmpl} - Sentinel` : tmpl;
 }
 
 export default routeTitleGen;

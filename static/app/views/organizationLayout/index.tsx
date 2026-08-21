@@ -25,7 +25,7 @@ function OrganizationLayout({children}: Props) {
   const organization = useOrganization({allowNull: true});
 
   return (
-    <SentryDocumentTitle noSuffix title={organization?.name ?? 'Sentry'}>
+    <SentryDocumentTitle noSuffix title={organization?.name ?? 'Sentinel'}>
       <OrganizationContainer>
         <div className="app">
           {organization && <OrganizationHeader organization={organization} />}

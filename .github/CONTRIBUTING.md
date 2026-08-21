@@ -1,10 +1,9 @@
 ## Feedback, Advice, and General Help
 
 If you're looking to provide general feedback, or get help or advice, please
-utilize our [community forum](https://forum.sentry.io/) rather than GitHub Issues.
+utilize [Hanzo support](https://hanzo.ai/support) rather than GitHub Issues.
 
-## Contributing to Sentry
+## Contributing to Sentinel
 
-Want to contribute towards this repository? Follow the server
-development documentation
-[here](https://docs.sentry.io/internal/).
+Want to contribute towards this repository? Follow the development
+documentation at [docs.hanzo.ai](https://docs.hanzo.ai/).

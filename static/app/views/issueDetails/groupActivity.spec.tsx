@@ -432,10 +432,10 @@ describe('GroupActivity', function () {
       organization: OrganizationFixture({}),
     });
     expect(screen.getAllByTestId('activity-item').at(-1)).toHaveTextContent(
-      'Sentry flagged this issue as escalating because over 400 events happened in an hour'
+      'Sentinel flagged this issue as escalating because over 400 events happened in an hour'
     );
     expect(screen.getAllByTestId('activity-item').at(-2)).toHaveTextContent(
-      'Sentry flagged this issue as escalating because over 200 events happened in an hour'
+      'Sentinel flagged this issue as escalating because over 200 events happened in an hour'
     );
   });
 
@@ -456,7 +456,7 @@ describe('GroupActivity', function () {
       organization: OrganizationFixture({}),
     });
     expect(screen.getAllByTestId('activity-item').at(-1)).toHaveTextContent(
-      'Sentry flagged this issue as escalating because over 1 event happened in an hour'
+      'Sentinel flagged this issue as escalating because over 1 event happened in an hour'
     );
   });
 
@@ -478,7 +478,7 @@ describe('GroupActivity', function () {
       ],
     });
     expect(screen.getAllByTestId('activity-item').at(-1)).toHaveTextContent(
-      'Sentry marked this issue as unresolved via Jira'
+      'Sentinel marked this issue as unresolved via Jira'
     );
   });
 
@@ -500,7 +500,7 @@ describe('GroupActivity', function () {
       ],
     });
     expect(screen.getAllByTestId('activity-item').at(-1)).toHaveTextContent(
-      'Sentry marked this issue as resolved via Jira'
+      'Sentinel marked this issue as resolved via Jira'
     );
   });
 
@@ -525,7 +525,7 @@ describe('GroupActivity', function () {
       ],
     });
     expect(screen.getAllByTestId('activity-item').at(-1)).toHaveTextContent(
-      'Sentry flagged this issue as escalating because 400 events happened in 1 minute'
+      'Sentinel flagged this issue as escalating because 400 events happened in 1 minute'
     );
   });
 
@@ -550,7 +550,7 @@ describe('GroupActivity', function () {
       ],
     });
     expect(screen.getAllByTestId('activity-item').at(-1)).toHaveTextContent(
-      'Sentry flagged this issue as escalating because 1 user was affected in 1 minute'
+      'Sentinel flagged this issue as escalating because 1 user was affected in 1 minute'
     );
   });
 
@@ -576,7 +576,7 @@ describe('GroupActivity', function () {
       ],
     });
     expect(screen.getAllByTestId('activity-item').at(-1)).toHaveTextContent(
-      'Sentry flagged this issue as escalating because Oct 30, 2018 12:00 AM passed'
+      'Sentinel flagged this issue as escalating because Oct 30, 2018 12:00 AM passed'
     );
   });
 
@@ -653,7 +653,7 @@ describe('GroupActivity', function () {
         ],
       });
       expect(screen.getAllByTestId('activity-item').at(-1)).toHaveTextContent(
-        'Sentry marked this issue as a regression'
+        'Sentinel marked this issue as a regression'
       );
     });
     it('renders regression with version', function () {
@@ -671,7 +671,7 @@ describe('GroupActivity', function () {
         ],
       });
       expect(screen.getAllByTestId('activity-item').at(-1)).toHaveTextContent(
-        'Sentry marked this issue as a regression in 1.0.0'
+        'Sentinel marked this issue as a regression in 1.0.0'
       );
     });
     it('renders regression with semver description', function () {
@@ -692,7 +692,7 @@ describe('GroupActivity', function () {
       });
       const activity = screen.getAllByTestId('activity-item').at(-1);
       expect(activity).toHaveTextContent(
-        'Sentry marked this issue as a regression in 2.0.0'
+        'Sentinel marked this issue as a regression in 2.0.0'
       );
       expect(activity).toHaveTextContent(
         '2.0.0 is greater than or equal to 1.0.0 compared via semver'
@@ -716,7 +716,7 @@ describe('GroupActivity', function () {
       });
       const activity = screen.getAllByTestId('activity-item').at(-1);
       expect(activity).toHaveTextContent(
-        'Sentry marked this issue as a regression in abc1'
+        'Sentinel marked this issue as a regression in abc1'
       );
       expect(activity).toHaveTextContent(
         'abc1 is greater than or equal to abc2 compared via release date'
@@ -740,7 +740,7 @@ describe('GroupActivity', function () {
         organization: OrganizationFixture({features: ['issue-priority-ui']}),
       });
       expect(screen.getAllByTestId('activity-item').at(-1)).toHaveTextContent(
-        'Sentry updated the priority value of this issue to be high after it escalated'
+        'Sentinel updated the priority value of this issue to be high after it escalated'
       );
     });
     it('renders a set priority activity for ongoing issues', function () {
@@ -760,7 +760,7 @@ describe('GroupActivity', function () {
         organization: OrganizationFixture({features: ['issue-priority-ui']}),
       });
       expect(screen.getAllByTestId('activity-item').at(-1)).toHaveTextContent(
-        'Sentry updated the priority value of this issue to be low after it was marked as ongoing'
+        'Sentinel updated the priority value of this issue to be low after it was marked as ongoing'
       );
     });
   });

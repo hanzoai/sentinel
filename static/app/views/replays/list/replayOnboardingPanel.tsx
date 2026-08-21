@@ -140,7 +140,7 @@ export function SetupReplaysCTA({
           </div>
           <div>
             {t(
-              "Replays are integrated with Sentry's tracing data model, enabling you to see replays associated with backend errors as well. You need to have Sentry set up for both your frontend and backend, along with distributed tracing."
+              "Replays are integrated with Sentinel's tracing data model, enabling you to see replays associated with backend errors as well. You need to have Sentinel set up for both your frontend and backend, along with distributed tracing."
             )}
           </div>
           <div>
@@ -164,7 +164,7 @@ export function SetupReplaysCTA({
         <AnswerContent>
           <div>
             {t(
-              'Session Replay adds a small amount of performance overhead to your web application. For most web apps, the performance overhead of our client SDK will be imperceptible to end-users. For example, the Sentry site has Replay enabled and we have not seen any significant slowdowns.'
+              'Session Replay adds a small amount of performance overhead to your web application. For most web apps, the performance overhead of our client SDK will be imperceptible to end-users. For example, the Sentinel site has Replay enabled and we have not seen any significant slowdowns.'
             )}
           </div>
           <div>

@@ -295,10 +295,10 @@ class U2fInterface extends Component<Props, State> {
             {
               UNKNOWN_ERROR: t('There was an unknown problem, please try again'),
               DEVICE_ERROR: t('Your U2F device reported an error.'),
-              DUPLICATE_DEVICE: t('This device is already registered with Sentry.'),
+              DUPLICATE_DEVICE: t('This device is already registered with Sentinel.'),
               UNKNOWN_DEVICE: t('The device you used for sign-in is unknown.'),
               BAD_APPID: tct(
-                `[p1:The Sentry server administrator modified the device
+                `[p1:The Sentinel server administrator modified the device
                  registrations.] [p2:You need to remove and re-add the device to continue using
                  your U2F device. Use a different sign-in method or contact [support] for
                  assistance.]`,

@@ -201,7 +201,7 @@ export function OrganizationAuthTokensDetails({params, organization}: Props) {
 
       <TextBlock>
         {t(
-          "Authentication tokens allow you to perform actions against the Sentry API on behalf of your organization. They're the easiest way to get started using the API."
+          "Authentication tokens allow you to perform actions against the Sentinel API on behalf of your organization. They're the easiest way to get started using the API."
         )}
       </TextBlock>
       <TextBlock>

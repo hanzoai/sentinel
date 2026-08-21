@@ -33,9 +33,9 @@ const LINKS = {
   DOCUMENTATION_API: 'https://docs.sentry.io/api/',
   API: '/settings/account/api/',
   MANAGE: '/manage/',
-  FORUM: 'https://forum.sentry.io/',
+  FORUM: 'https://hanzo.ai/support',
   GITHUB_ISSUES: 'https://github.com/getsentry/sentry/issues',
-  SERVICE_STATUS: 'https://status.sentry.io/',
+  SERVICE_STATUS: 'https://status.hanzo.ai',
 };
 
 const HOME_ICON_SIZE = 56;
@@ -187,7 +187,7 @@ function SettingsIndex({organization, ...props}: SettingsIndexProps) {
         <ul>
           <li>
             <SupportLink {...supportLinkProps}>
-              {isSelfHosted ? t('Community Forums') : t('Contact Support')}
+              {isSelfHosted ? t('Support') : t('Contact Support')}
             </SupportLink>
           </li>
           <li>

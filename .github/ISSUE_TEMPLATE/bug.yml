@@ -7,8 +7,8 @@ body:
       label: Environment
       description: Where are you using our software?
       options:
-        - SaaS (https://sentry.io/)
-        - self-hosted (https://develop.sentry.dev/self-hosted/)
+        - Hosted
+        - Self-hosted
     validations:
       required: true
   - type: textarea
@@ -90,16 +90,16 @@ body:
     id: link
     attributes:
       label: Link
-      placeholder: https://sentry.io/organizations/{ORG_SLUG}/...
-      description: If on SaaS, where exactly did you find the bug? **Note:** This will divulge your org slug publicly.
+      placeholder: https://{HOST}/organizations/{ORG_SLUG}/...
+      description: If hosted, where exactly did you find the bug? **Note:** This will divulge your org slug publicly.
     validations:
       required: false
   - type: input
     id: DSN
     attributes:
       label: DSN
-      placeholder: https://{tag}@o{ORG_ID}.ingest.sentry.io/{PROJECT_ID}
-      description: If on SaaS, what is your DSN? This is an easy way to give us your org ID (non-PII).
+      placeholder: https://{tag}@{HOST}/{PROJECT_ID}
+      description: If hosted, what is your DSN? This is an easy way to give us your org ID (non-PII).
     validations:
       required: false
   - type: input
@@ -108,12 +108,5 @@ body:
       label: Version
       placeholder: 21.7.0 ← should look like this (check the footer)
       description: If on self-hosted, what version are you running?
-    validations:
-      required: false
-  - type: markdown
-    attributes:
-      value: |-
-        ## Thanks 🙏
-        Check our [triage docs](https://open.sentry.io/triage/) for what to expect next.
     validations:
       required: false

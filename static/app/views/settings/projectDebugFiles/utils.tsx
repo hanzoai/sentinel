@@ -53,7 +53,7 @@ export function getFeatureTooltip(feature: DebugFileFeature) {
       );
     case DebugFileFeature.SOURCES:
       return t(
-        'Source code information allows Sentry to display source code context for stack frames'
+        'Source code information allows Sentinel to display source code context for stack frames'
       );
     default:
       return null;

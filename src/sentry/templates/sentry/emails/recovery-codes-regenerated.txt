@@ -1,5 +1,5 @@
 {% extends "sentry/emails/security_base.txt" %}
 
 {% block security_body %}
-Recovery codes have been regenerated for your Sentry account.
+Recovery codes have been regenerated for your Sentinel account.
 {% endblock %}
