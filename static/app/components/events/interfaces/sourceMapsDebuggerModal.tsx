@@ -179,7 +179,7 @@ export function SourceMapsDebuggerModal({
       <Body>
         <p>
           {t(
-            "It looks like the original source code for this stack frame couldn't be determined when this error was captured. To get the original code for this stack frame, Sentry needs source maps to be configured."
+            "It looks like the original source code for this stack frame couldn't be determined when this error was captured. To get the original code for this stack frame, Sentinel needs source maps to be configured."
           )}
         </p>
         <WizardInstructionParagraph>
@@ -357,7 +357,7 @@ export function SourceMapsDebuggerModal({
             <TabPanels.Item key="fetching">
               <p>
                 {tct(
-                  'Sentry will fetch your source files and source maps if you [link:host them publicly].',
+                  'Sentinel will fetch your source files and source maps if you [link:host them publicly].',
                   {
                     link: (
                       <ExternalLinkWithIcon href="https://docs.sentry.io/platforms/javascript/sourcemaps/uploading/hosting-publicly/" />
@@ -567,12 +567,12 @@ function HasDebugIdChecklistItem({
           <h6>Uploaded Files Not Deployed</h6>
           <p>
             {t(
-              "It seems you already uploaded artifacts with Debug IDs, however, this event doesn't contain any Debug IDs yet. Generally this means that you didn't deploy the same files you injected the Debug IDs into. For Sentry to be able to show your original source code, it is required that you deploy the exact same files that you uploaded to Sentry."
+              "It seems you already uploaded artifacts with Debug IDs, however, this event doesn't contain any Debug IDs yet. Generally this means that you didn't deploy the same files you injected the Debug IDs into. For Sentinel to be able to show your original source code, it is required that you deploy the exact same files that you uploaded to Sentinel."
             )}
           </p>
           <p>
             {tct(
-              'If you are using a [bundlerPluginRepoLink:Sentry Plugin for your Bundler], the plugin needs to be active when building your production app. You cannot do two separate builds, for example, one for uploading to Sentry with the plugin being active and one for deploying without the plugin. The plugin needs to be active for every build.',
+              'If you are using a [bundlerPluginRepoLink:Sentry Plugin for your Bundler], the plugin needs to be active when building your production app. You cannot do two separate builds, for example, one for uploading to Sentinel with the plugin being active and one for deploying without the plugin. The plugin needs to be active for every build.',
               {
                 bundlerPluginRepoLink: (
                   <ExternalLinkWithIcon href="https://github.com/getsentry/sentry-javascript-bundler-plugins" />
@@ -593,7 +593,7 @@ function HasDebugIdChecklistItem({
           </p>
           <p>
             {tct(
-              'Read the [link:Sentry Source Maps Documentation] to learn how to inject Debug IDs into your build artifacts and how to upload them to Sentry.',
+              'Read the [link:Sentry Source Maps Documentation] to learn how to inject Debug IDs into your build artifacts and how to upload them to Sentinel.',
               {
                 link: (
                   <ExternalLinkWithIcon href="https://docs.sentry.io/platforms/javascript/sourcemaps/" />
@@ -612,7 +612,7 @@ function HasDebugIdChecklistItem({
         <h6>{t('No Debug ID Tooling Used')}</h6>
         <p>
           {tct(
-            "This event doesn't contain any Debug IDs. Read the [link:Sentry Source Maps Documentation] to learn how to inject Debug IDs into your build artifacts and how to upload them to Sentry.",
+            "This event doesn't contain any Debug IDs. Read the [link:Sentry Source Maps Documentation] to learn how to inject Debug IDs into your build artifacts and how to upload them to Sentinel.",
             {
               link: (
                 <ExternalLinkWithIcon href="https://docs.sentry.io/platforms/javascript/sourcemaps/" />
@@ -660,7 +660,7 @@ function UploadedSourceFileWithCorrectDebugIdChecklistItem({
           </p>
           <p>
             {t(
-              'Make sure to inject Debug IDs into all of your source files and to upload all of them to Sentry.'
+              'Make sure to inject Debug IDs into all of your source files and to upload all of them to Sentinel.'
             )}
           </p>
           {/* TODO: Link to Uploaded Artifacts */}
@@ -675,7 +675,7 @@ function UploadedSourceFileWithCorrectDebugIdChecklistItem({
         <h6>{t('No Artifacts With Debug IDs Uploaded')}</h6>
         <p>
           {tct(
-            "You didn't upload any artifacts with debug IDs yet. Read the [link:Sentry Source Maps Documentation] to learn how to inject Debug IDs into your build artifacts and how to upload them to Sentry.",
+            "You didn't upload any artifacts with debug IDs yet. Read the [link:Sentry Source Maps Documentation] to learn how to inject Debug IDs into your build artifacts and how to upload them to Sentinel.",
             {
               link: (
                 <ExternalLinkWithIcon href="https://docs.sentry.io/platforms/javascript/sourcemaps/" />
@@ -724,7 +724,7 @@ function UploadedSourceMapWithCorrectDebugIdChecklistItem({
           </p>
           <p>
             {t(
-              'Make sure to inject Debug IDs into all of your source files and to upload all of them to Sentry.'
+              'Make sure to inject Debug IDs into all of your source files and to upload all of them to Sentinel.'
             )}
           </p>
           {/* TODO: Link to Uploaded Artifacts */}
@@ -740,7 +740,7 @@ function UploadedSourceMapWithCorrectDebugIdChecklistItem({
         <h6>{t('No Artifacts Uploaded')}</h6>
         <p>
           {tct(
-            "You didn't upload any artifacts with debug IDs yet. Read the [link:Sentry Source Maps Documentation] to learn how to inject Debug IDs into your build artifacts and how to upload them to Sentry.",
+            "You didn't upload any artifacts with debug IDs yet. Read the [link:Sentry Source Maps Documentation] to learn how to inject Debug IDs into your build artifacts and how to upload them to Sentinel.",
             {
               link: (
                 <ExternalLinkWithIcon href="https://docs.sentry.io/platforms/javascript/sourcemaps/" />
@@ -827,13 +827,13 @@ function ReleaseHasUploadedArtifactsChecklistItem({
         <h6>{t('No Uploaded Artifacts')}</h6>
         <p>
           {t(
-            "The release this event belongs to doesn't have any uploaded artifacts. Upload your build artifacts to Sentry using the release:"
+            "The release this event belongs to doesn't have any uploaded artifacts. Upload your build artifacts to Sentinel using the release:"
           )}{' '}
           <MonoBlock>{sourceResolutionResults.release}</MonoBlock>
         </p>
         <p>
           {tct(
-            'Read the [link:Sentry Source Maps Documentation] to learn how to to upload your build artifacts to Sentry.',
+            'Read the [link:Sentry Source Maps Documentation] to learn how to to upload your build artifacts to Sentinel.',
             {
               link: <ExternalLinkWithIcon href={docsLink} />,
             }
@@ -875,14 +875,14 @@ function ReleaseSourceFileMatchingChecklistItem({
           {sourceResolutionResults.dist !== null ? (
             <p>
               {tct(
-                'Upload your build artifacts to Sentry using the dist [dist] or adjust the dist value in your SDK options.',
+                'Upload your build artifacts to Sentinel using the dist [dist] or adjust the dist value in your SDK options.',
                 {dist: <MonoBlock>{sourceResolutionResults.dist}</MonoBlock>}
               )}
             </p>
           ) : (
             <p>
               {tct(
-                'Upload your build artifacts to Sentry using a matching [dist] value or adjust the [dist] value in your SDK options.',
+                'Upload your build artifacts to Sentinel using a matching [dist] value or adjust the [dist] value in your SDK options.',
                 {dist: <MonoBlock>dist</MonoBlock>}
               )}
             </p>
@@ -924,7 +924,7 @@ function ReleaseSourceFileMatchingChecklistItem({
         </p>
         <p>
           {t(
-            "Sentry was not able to find a file in the release's artifacts that matches one of the following paths:"
+            "Sentinel was not able to find a file in the release's artifacts that matches one of the following paths:"
           )}
         </p>
         <InstructionList>
@@ -1017,14 +1017,14 @@ function ReleaseSourceMapMatchingChecklistItem({
           {sourceResolutionResults.dist !== null ? (
             <p>
               {tct(
-                'Upload your build artifacts to Sentry using the dist [dist] or adjust the dist value in your SDK options.',
+                'Upload your build artifacts to Sentinel using the dist [dist] or adjust the dist value in your SDK options.',
                 {dist: <MonoBlock>{sourceResolutionResults.dist}</MonoBlock>}
               )}
             </p>
           ) : (
             <p>
               {tct(
-                'Upload your build artifacts to Sentry using a matching [dist] value or adjust the [dist] value in your SDK options.',
+                'Upload your build artifacts to Sentinel using a matching [dist] value or adjust the [dist] value in your SDK options.',
                 {dist: <MonoBlock>dist</MonoBlock>}
               )}
             </p>
@@ -1096,7 +1096,7 @@ function ScrapingSourceFileAvailableChecklistItem({
 
   if (sourceResolutionResults.sourceFileScrapingStatus.status === 'success') {
     return (
-      <CheckListItem status="checked" title={t('Source file available to Sentry')} />
+      <CheckListItem status="checked" title={t('Source file available to Sentinel')} />
     );
   }
 
@@ -1107,7 +1107,7 @@ function ScrapingSourceFileAvailableChecklistItem({
           <h6>{t('Fetching Was Not Attempted')}</h6>
           <p>
             {t(
-              'The source file was already located via Debug IDs or Releases. Sentry will only attempt to fetch the source file from your servers as a fallback mechanism.'
+              'The source file was already located via Debug IDs or Releases. Sentinel will only attempt to fetch the source file from your servers as a fallback mechanism.'
             )}
           </p>
         </CheckListInstruction>
@@ -1122,19 +1122,19 @@ function ScrapingSourceFileAvailableChecklistItem({
     ] ?? SOURCE_FILE_SCRAPING_REASON_MAP.other;
 
   return (
-    <CheckListItem status="alert" title={t('Source file is not available to Sentry')}>
+    <CheckListItem status="alert" title={t('Source file is not available to Sentinel')}>
       <CheckListInstruction type="muted">
         <h6>
           {t('Error While Fetching The Source File:')} {failureReasonTexts.shortName}
         </h6>
         <p>{failureReasonTexts.explanation}</p>
         <p>
-          {t('Sentry looked for the source file at this location:')}{' '}
+          {t('Sentinel looked for the source file at this location:')}{' '}
           <MonoBlock>{sourceResolutionResults.sourceFileScrapingStatus.url}</MonoBlock>
         </p>
         {sourceResolutionResults.sourceFileScrapingStatus.details && (
           <Fragment>
-            <p>{t('Sentry symbolification error message:')}</p>
+            <p>{t('Sentinel symbolification error message:')}</p>
             <ScrapingSymbolificationErrorMessage>
               "{sourceResolutionResults.sourceFileScrapingStatus.details}"
             </ScrapingSymbolificationErrorMessage>
@@ -1151,11 +1151,11 @@ function ScrapingSourceMapAvailableChecklistItem({
   sourceResolutionResults: FrameSourceMapDebuggerData;
 }) {
   if (sourceResolutionResults.sourceMapScrapingStatus?.status === 'success') {
-    return <CheckListItem status="checked" title={t('Source map available to Sentry')} />;
+    return <CheckListItem status="checked" title={t('Source map available to Sentinel')} />;
   }
 
   if (sourceResolutionResults.sourceFileScrapingStatus?.status !== 'success') {
-    return <CheckListItem status="none" title={t('Source map available to Sentry')} />;
+    return <CheckListItem status="none" title={t('Source map available to Sentinel')} />;
   }
 
   if (sourceResolutionResults.sourceMapScrapingStatus === null) {
@@ -1177,7 +1177,7 @@ function ScrapingSourceMapAvailableChecklistItem({
           <h6>{t('Fetching Was Not Attempted')}</h6>
           <p>
             {t(
-              'The source map was already located via Debug IDs or Releases. Sentry will only attempt to fetch the source map from your servers as a fallback mechanism.'
+              'The source map was already located via Debug IDs or Releases. Sentinel will only attempt to fetch the source map from your servers as a fallback mechanism.'
             )}
           </p>
         </CheckListInstruction>
@@ -1192,19 +1192,19 @@ function ScrapingSourceMapAvailableChecklistItem({
     ] ?? SOURCE_MAP_SCRAPING_REASON_MAP.other;
 
   return (
-    <CheckListItem status="alert" title={t('Source map is not available to Sentry')}>
+    <CheckListItem status="alert" title={t('Source map is not available to Sentinel')}>
       <CheckListInstruction type="muted">
         <h6>
           {t('Error While Fetching The Source Map:')} {failureReasonTexts.shortName}
         </h6>
         <p>{failureReasonTexts.explanation}</p>
         <p>
-          {t('Sentry looked for the source map at this location:')}{' '}
+          {t('Sentinel looked for the source map at this location:')}{' '}
           <MonoBlock>{sourceResolutionResults.sourceMapScrapingStatus.url}</MonoBlock>
         </p>
         {sourceResolutionResults.sourceMapScrapingStatus.details && (
           <Fragment>
-            <p>{t('Sentry symbolification error message:')}</p>
+            <p>{t('Sentinel symbolification error message:')}</p>
             <ScrapingSymbolificationErrorMessage>
               "{sourceResolutionResults.sourceMapScrapingStatus.details}"
             </ScrapingSymbolificationErrorMessage>

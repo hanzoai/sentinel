@@ -22,12 +22,12 @@ function Resources(_props: Props) {
         <ResourceCard
           link="https://docs.sentry.io/product/releases/"
           imgUrl={releasesImg}
-          title={t('The Sentry Workflow')}
+          title={t('The Sentinel Workflow')}
         />
         <ResourceCard
           link="https://docs.sentry.io/product/issues/"
           imgUrl={breadcrumbsImg}
-          title={t('Sentry vs Logging')}
+          title={t('Sentinel vs Logging')}
         />
         <ResourceCard link="https://docs.sentry.io/" imgUrl={docsImg} title={t('Docs')} />
       </ResourceCards>

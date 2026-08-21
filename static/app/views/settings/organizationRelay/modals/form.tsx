@@ -112,7 +112,7 @@ function Form({
           </StyledField>
           <FieldHelp>
             {t(
-              'Only enter the Public Key value from your credentials file. Never share the Secret key with Sentry or any third party'
+              'Only enter the Public Key value from your credentials file. Never share the Secret key with Sentinel or any third party'
             )}
           </FieldHelp>
         </FieldWrapper>

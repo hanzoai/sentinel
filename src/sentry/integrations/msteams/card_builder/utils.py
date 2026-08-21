@@ -17,7 +17,7 @@ class HelpMessages:
         "Want to learn more about configuring alerts in Sentry? Check out our documentation."
     )
     DOCS_BUTTON = "Docs"
-    DOCS_URL = "https://docs.sentry.io/product/alerts-notifications/alerts/"
+    DOCS_URL = "https://docs.hanzo.ai"
 
 
 class IdentityMessages:
@@ -45,7 +45,7 @@ class InstallationMessages:
     TEAM_INSTALLATION_DESCRIPTION = "You can use Sentry for Microsoft Teams to get notifications that allow you to assign, ignore, or resolve directly in your chat."
     TEAM_INSTALLATION_INSTRUCTION = (
         "Please click **Complete Setup** to finish the setup process."
-        " Don't have a Sentry account? [Sign Up](https://sentry.io/signup/)."
+        " Don't have a Hanzo account? [Sign Up](https://hanzo.ai/signup)."
     )
     TEAM_INSTALLATION_BUTTON = "Complete Setup"
 
@@ -53,7 +53,7 @@ class InstallationMessages:
     PERSONAL_INSTALLATION_INSTRUCTION = (
         " Please click **Complete Setup** below to link your Microsoft Teams identity"
         " with Sentry and start receiving notifications in this space."
-        " Don't have a Sentry account? [Sign Up](https://sentry.io/signup/)."
+        " Don't have a Hanzo account? [Sign Up](https://hanzo.ai/signup)."
     )
     PERSONAL_INSTALLATION_DESCRIPTION = (
         "It looks like you have installed Sentry as a personal app."

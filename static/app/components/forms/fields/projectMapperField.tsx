@@ -244,7 +244,7 @@ export class RenderField extends Component<RenderProps, State> {
           />
           <RightArrow size="xs" direction="right" />
           <SelectControl
-            placeholder={t('Sentry project\u2026')}
+            placeholder={t('Sentinel project\u2026')}
             name="project"
             options={projectOptions}
             components={{

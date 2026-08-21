@@ -5,7 +5,7 @@
 {{ user_name }} {{ action }}:
 {% if enhanced_privacy %}
 Details about this activity are not shown in this email since enhanced privacy
-controls are enabled. For more details about this activity, view on Sentry:
+controls are enabled. For more details about this activity, view on Sentinel:
 {{ link }}.
 {% else %}
 Alert: {{ link }}

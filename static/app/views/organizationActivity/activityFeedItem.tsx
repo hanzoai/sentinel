@@ -352,7 +352,7 @@ class ActivityItem extends Component<Props, State> {
       />
     );
     const author = {
-      name: item.user ? item.user.name : 'Sentry',
+      name: item.user ? item.user.name : 'Sentinel',
       avatar,
     };
 

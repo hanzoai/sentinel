@@ -90,7 +90,7 @@ function ProjectTags(props: Props) {
       <SettingsPageHeader title={t('Tags')} />
       <TextBlock>
         {tct(
-          `Each event in Sentry may be annotated with various tags (key and value pairs).
+          `Each event in Sentinel may be annotated with various tags (key and value pairs).
                  Learn how to [link:add custom tags].`,
           {
             link: (

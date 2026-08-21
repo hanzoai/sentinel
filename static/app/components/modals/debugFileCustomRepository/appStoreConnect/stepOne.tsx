@@ -19,7 +19,7 @@ function StepOne({stepOneData, onSetStepOneData}: Props) {
     <Fragment>
       <Alert type="info">
         {tct(
-          'Please enter the [docLink:App Store Connect API Key] details. The key needs to have the "Developer" role for Sentry to discover the app builds.',
+          'Please enter the [docLink:App Store Connect API Key] details. The key needs to have the "Developer" role for Sentinel to discover the app builds.',
           {
             docLink: (
               <ExternalLink href="https://developer.apple.com/documentation/appstoreconnectapi/creating_api_keys_for_app_store_connect_api" />

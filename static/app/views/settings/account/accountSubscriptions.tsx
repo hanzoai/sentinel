@@ -103,7 +103,7 @@ class AccountSubscriptions extends DeprecatedAsyncView<
       <div>
         <SettingsPageHeader title={this.getTitle()} />
         <TextBlock>
-          {t(`Sentry is committed to respecting your inbox. Our goal is to
+          {t(`Sentinel is committed to respecting your inbox. Our goal is to
               provide useful content and resources that make fixing errors less
               painful. Enjoyable even.`)}
         </TextBlock>
@@ -183,7 +183,7 @@ class AccountSubscriptions extends DeprecatedAsyncView<
           )}
         </Panel>
         <TextBlock>
-          {t(`We’re applying GDPR consent and privacy policies to all Sentry
+          {t(`We’re applying GDPR consent and privacy policies to all Sentinel
               contacts, regardless of location. You’ll be able to manage your
               subscriptions here and from an Unsubscribe link in the footer of
               all marketing emails.`)}

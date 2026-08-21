@@ -188,7 +188,7 @@ class PluginSettings<
       return (
         <Alert type="error">
           {tct('An unknown error occurred. Need help with this? [link:Contact support]', {
-            link: <a href="https://sentry.io/support/" />,
+            link: <a href="https://hanzo.ai/support" />,
           })}
         </Alert>
       );

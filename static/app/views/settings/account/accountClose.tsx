@@ -38,7 +38,7 @@ function GoodbyeModalContent({Header, Body, Footer}: ModalRenderProps) {
           {t('Your account has been deactivated and scheduled for removal.')}
         </TextBlock>
         <TextBlock>
-          {t('Thanks for using Sentry! We hope to see you again soon!')}
+          {t('Thanks for using Sentinel! We hope to see you again soon!')}
         </TextBlock>
       </Body>
       <Footer>

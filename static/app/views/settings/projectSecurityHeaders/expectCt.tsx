@@ -69,7 +69,7 @@ function ProjectExpectCtReports() {
           </p>
           <p>
             {tct(
-              "To configure reports in Sentry, you'll need to configure the [header] a header from your server:",
+              "To configure reports in Sentinel, you'll need to configure the [header] a header from your server:",
               {
                 header: <code>Expect-CT</code>,
               }

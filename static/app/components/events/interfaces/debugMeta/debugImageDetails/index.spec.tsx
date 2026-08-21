@@ -61,7 +61,7 @@ describe('Debug Meta - Image Details', function () {
     const sourceNames = screen
       .getAllByTestId('source-name')
       .map(sourceName => sourceName.textContent);
-    expect(sourceNames).toEqual(['America', 'Austria', 'Belgium', 'Sentry']);
+    expect(sourceNames).toEqual(['America', 'Austria', 'Belgium', 'Sentinel']);
 
     // Check location order.
     // The UI shall sort the candidates by source location (alphabetical)

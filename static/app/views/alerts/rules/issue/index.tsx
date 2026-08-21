@@ -1204,7 +1204,7 @@ class IssueRuleEditor extends DeprecatedAsyncView<Props, State> {
                       <StepContent>
                         <StepLead>
                           {tct(
-                            '[when:When] an event is captured by Sentry and [selector] of the following happens',
+                            '[when:When] an event is captured by Sentinel and [selector] of the following happens',
                             {
                               when: <Badge />,
                               selector: (

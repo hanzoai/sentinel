@@ -20,7 +20,7 @@ function NavigateToExternalLinkModal({Body, closeModal, Header, linkText}: Props
       <Body>
         <p>
           {t(
-            "You're leaving Sentry and will be redirected to the following external website:"
+            "You're leaving Sentinel and will be redirected to the following external website:"
           )}
         </p>
         <ParagraphContainer>{linkText}</ParagraphContainer>

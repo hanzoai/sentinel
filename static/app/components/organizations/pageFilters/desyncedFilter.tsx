@@ -18,7 +18,7 @@ export function DesyncedFilterMessage() {
     <DesyncedFilterMessageWrap>
       <strong>{t('Filters Updated')}</strong>
       {t(
-        'Looks like you opened Sentry through a shared link. Your filters have been updated with new values encoded in the link.'
+        'Looks like you opened Sentinel through a shared link. Your filters have been updated with new values encoded in the link.'
       )}
       <DesyncedFilterMessageFooter>
         <Button

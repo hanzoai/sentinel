@@ -200,7 +200,7 @@ export class DebugImageDetails extends DeprecatedAsyncComponent<Props, State> {
         symbolType,
         fileType: getPrettyFileType(debugFile),
         source: INTERNAL_SOURCE,
-        source_name: t('Sentry'),
+        source_name: t('Sentinel'),
       };
     });
 

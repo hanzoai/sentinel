@@ -28,7 +28,7 @@ function SetupReleasesPrompt() {
           {t('Resolving is better with Releases')}
         </SetupReleasesHeader>
         {t(
-          'Set up Releases so Sentry can bother you when this problem comes back in a future release.'
+          'Set up Releases so Sentinel can bother you when this problem comes back in a future release.'
         )}
       </div>
       <LinkButton

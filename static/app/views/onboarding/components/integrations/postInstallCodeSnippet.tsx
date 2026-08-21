@@ -21,7 +21,7 @@ export default function PostInstallCodeSnippet({
     <div>
       <p>
         {t(
-          "Congrats, you just installed the %s integration! Now that it's is installed, the next time you trigger an error it will go to your Sentry.",
+          "Congrats, you just installed the %s integration! Now that it's is installed, the next time you trigger an error it will go to your Sentinel.",
           provider.name
         )}
       </p>
@@ -42,7 +42,7 @@ export default function PostInstallCodeSnippet({
         <Fragment>
           <p>
             {t(
-              "If you're new to Sentry, use the email alert to access your account and complete a product tour."
+              "If you're new to Sentinel, use the email alert to access your account and complete a product tour."
             )}
           </p>
           <p>

@@ -26,7 +26,7 @@
 {% block title %} {% trans "Opsgenie Setup" %} | {{ block.super }} {% endblock %}
 
 {% block main %}
-<h3>{% trans "Connect Sentry with Opsgenie" %}</h3>
+<h3>{% trans "Connect Sentinel with Opsgenie" %}</h3>
   <form action="" method="post" class="form-stacked">
     {% csrf_token %}
     <input type="hidden" name="provider" value="opsgenie" />

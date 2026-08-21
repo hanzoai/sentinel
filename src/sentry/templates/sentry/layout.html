@@ -26,12 +26,12 @@
   <meta property="{{ tag.property }}" content="{{ tag.content }}" />
   {% endfor %}
 
-  <link rel="mask-icon" sizes="any" href="{% absolute_asset_url "sentry" "images/logos/logo-sentry.svg" %}" color="#FB4226">
+  <link rel="mask-icon" sizes="any" href="{% absolute_asset_url "sentry" "images/logos/logo-sentry.svg" %}" color="#0A0A0A">
 
   <link href="{% frontend_app_asset_url "sentry" "entrypoints/sentry.css" %}" rel="stylesheet"/>
 
 
-  <title>{% block title %}Sentry{% endblock %}</title>
+  <title>{% block title %}Sentinel{% endblock %}</title>
 
   {% block initial_data %}
     {% script %}
@@ -45,7 +45,7 @@
   <script>
     // if the ads.js file loads below it will mark this variable as false
     window.adblockSuspected = true;
-    // Initialize this so that we can queue up tasks when Sentry SPA is initialized
+    // Initialize this so that we can queue up tasks when Sentinel SPA is initialized
     window.__onSentryInit = window.__onSentryInit || [];
   </script>
   {% endscript %}

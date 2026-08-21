@@ -52,7 +52,7 @@ function ActivitySection(props: Props) {
       </ActivityItem>
 
       {group.activity.map(item => {
-        const authorName = item.user ? item.user.name : 'Sentry';
+        const authorName = item.user ? item.user.name : 'Sentinel';
 
         if (item.type === GroupActivityType.NOTE) {
           return (

@@ -31,7 +31,7 @@ function BaseFooter({className}: Props) {
       <LeftLinks>
         {isSelfHosted && (
           <Fragment>
-            {'Sentry '}
+            {'Sentinel '}
             {getDynamicText({
               fixed: 'Acceptance Test',
               value: version.current,
@@ -47,7 +47,7 @@ function BaseFooter({className}: Props) {
         {privacyUrl && <FooterLink href={privacyUrl}>{t('Privacy Policy')}</FooterLink>}
         {termsUrl && <FooterLink href={termsUrl}>{t('Terms of Use')}</FooterLink>}
       </LeftLinks>
-      <SentryLogoLink href="https://sentry.io/welcome/" tabIndex={-1}>
+      <SentryLogoLink href="https://hanzo.ai" tabIndex={-1}>
         <SentryLogoHook
           size="lg"
           pride={(organization?.features ?? []).includes('sentry-pride-logo-footer')}
@@ -55,7 +55,7 @@ function BaseFooter({className}: Props) {
       </SentryLogoLink>
       <RightLinks>
         {!isSelfHosted && (
-          <FooterLink href="https://status.sentry.io/">{t('Service Status')}</FooterLink>
+          <FooterLink href="https://status.hanzo.ai">{t('Service Status')}</FooterLink>
         )}
         <FooterLink href="/api/">{t('API')}</FooterLink>
         <FooterLink href="/docs/">{t('Docs')}</FooterLink>
