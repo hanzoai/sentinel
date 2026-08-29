@@ -10,15 +10,15 @@
   "author": "sentry.io",
   "license": "UNLICENSED",
   "dependencies": {
-    "js-yaml": "^3.14.0",
-    "json-diff": "^0.7.1",
+    "js-yaml": "^5.4.1",
+    "json-diff": "^1.0.6",
     "json-refs": "^3.0.15",
-    "openapi-examples-validator": "^5.0.0",
+    "openapi-examples-validator": "^7.1.0",
     "sane": "^5.0.1"
   },
   "devDependencies": {
-    "@types/js-yaml": "^4.0.5",
-    "@types/json-diff": "^0.7.0"
+    "@types/js-yaml": "^4.0.9",
+    "@types/json-diff": "^1.0.3"
   },
   "volta": {
     "node": "20.11.0",
