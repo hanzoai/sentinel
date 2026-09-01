@@ -378,7 +378,7 @@ const CodeSnippetDropdownWrapper = styled('span')`
 
 const CodeSnippetDropdown = styled(DropdownAutoComplete)`
   position: absolute;
-  font-family: ${p => p.theme.text.family};
+  font-family: Zen, -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, "Helvetica Neue", Arial, sans-serif{p => p.theme.text.family};
   border: none;
   border-radius: 4px;
   width: 300px;
@@ -386,7 +386,7 @@ const CodeSnippetDropdown = styled(DropdownAutoComplete)`
 
 const GroupHeader = styled('div')`
   font-size: ${p => p.theme.fontSizeSmall};
-  font-family: ${p => p.theme.text.family};
+  font-family: Zen, -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, "Helvetica Neue", Arial, sans-serif{p => p.theme.text.family};
   font-weight: 600;
   margin: ${space(1)} 0;
   color: ${p => p.theme.subText};
@@ -404,7 +404,7 @@ const MenuItemWrapper = styled('div')<{
   cursor: ${p => (p.disabled ? 'not-allowed' : 'pointer')};
   display: flex;
   align-items: center;
-  font-family: ${p => p.theme.text.family};
+  font-family: Zen, -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, "Helvetica Neue", Arial, sans-serif{p => p.theme.text.family};
   font-size: 13px;
   ${p =>
     typeof p.py !== 'undefined' &&

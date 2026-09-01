@@ -379,7 +379,7 @@ const Title = styled('div')`
 `;
 
 const FileName = styled('span')`
-  font-family: ${p => p.theme.text.familyMono};
+  font-family: Zen, -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, "Helvetica Neue", Arial, sans-serif{p => p.theme.text.familyMono};
 `;
 
 const StyledButtonBar = styled(ButtonBar)`

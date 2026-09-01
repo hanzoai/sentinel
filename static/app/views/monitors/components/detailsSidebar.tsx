@@ -121,7 +121,7 @@ const Schedule = styled('div')`
 `;
 
 const CrontabText = styled(Text)`
-  font-family: ${p => p.theme.text.familyMono};
+  font-family: Zen, -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, "Helvetica Neue", Arial, sans-serif{p => p.theme.text.familyMono};
   color: ${p => p.theme.subText};
 `;
 

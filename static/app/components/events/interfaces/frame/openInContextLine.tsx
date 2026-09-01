@@ -64,7 +64,7 @@ const OpenInContainer = styled('div')`
   gap: ${space(1)};
   align-items: center;
   z-index: 1;
-  font-family: ${p => p.theme.text.family};
+  font-family: Zen, -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, "Helvetica Neue", Arial, sans-serif{p => p.theme.text.family};
   text-indent: initial;
   overflow: auto;
   white-space: nowrap;

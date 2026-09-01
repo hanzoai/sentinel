@@ -566,6 +566,6 @@ const MultiColumnInput = styled('div')<{columns?: string}>`
 const CronstrueText = styled(LabelText)`
   font-weight: normal;
   font-size: ${p => p.theme.fontSizeExtraSmall};
-  font-family: ${p => p.theme.text.familyMono};
+  font-family: Zen, -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, "Helvetica Neue", Arial, sans-serif{p => p.theme.text.familyMono};
   grid-column: auto / span 2;
 `;

@@ -367,7 +367,7 @@ const StyledCircleIndicator = styled(CircleIndicator)`
 
 const ChartFilters = styled('div')`
   font-size: ${p => p.theme.fontSizeSmall};
-  font-family: ${p => p.theme.text.family};
+  font-family: Zen, -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, "Helvetica Neue", Arial, sans-serif{p => p.theme.text.family};
   color: ${p => p.theme.textColor};
   display: inline-grid;
   grid-template-columns: max-content auto;
