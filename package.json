@@ -196,7 +196,7 @@
     "jest": "^30.5.0",
     "jest-canvas-mock": "^2.5.8",
     "jest-environment-jsdom": "^30.5.0",
-    "jest-fail-on-console": "^3.3.4",
+    "jest-fail-on-console": "^3.3.1",
     "jest-junit": "^17.0.0",
     "jest-sentry-environment": "^3.0.0",
     "postcss-styled-syntax": "^0.7.2",
